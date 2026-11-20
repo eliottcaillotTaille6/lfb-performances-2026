@@ -1,0 +1,15 @@
+{
+  "name": "lfb-performances",
+  "version": "1.0.0",
+  "description": "La Boulangère Wonderligue : les performances à 20 points ou en double-double, match par match",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "build": "node scripts/build-site.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,5335 @@
+{
+ "updated": "2026-11-20T18:02:58.147Z",
+ "season": "2026-27",
+ "games": [
+  {
+   "id": "2875391",
+   "date": "2026-09-26",
+   "tipoff_utc": "2026-09-26T17:00:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 70
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 55
+   },
+   "youtube": "https://www.youtube.com/watch?v=2cp1_vfoSt0",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875391/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876504-villeneuve-d-ascq-toulouse"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "stephanie-emma-kostowicz",
+     "name": "Stéphanie Emma Kostowicz",
+     "jersey": "33",
+     "side": "home",
+     "team": "Villeneuve d'Ascq",
+     "team_code": "VIL",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/dda7be7145b29fc966a5fb593e51426fT1.jpg",
+     "stats": {
+      "min": 25.3,
+      "pts": 12,
+      "fgm": 6,
+      "fga": 10,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 2,
+      "dreb": 8,
+      "reb": 10,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "to": 1,
+      "pf": 2,
+      "pm": 7
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875383",
+   "date": "2026-09-26",
+   "tipoff_utc": "2026-09-26T18:00:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 81
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 67
+   },
+   "youtube": "https://www.youtube.com/watch?v=6UJ9Zj7A4IY",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875383/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876500-bourges-landerneau"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875385",
+   "date": "2026-09-26",
+   "tipoff_utc": "2026-09-26T18:00:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 77
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 83
+   },
+   "youtube": "https://www.youtube.com/watch?v=FSo5hV-cFjU",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875385/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876501-charnay-lattes-montpellier"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "sarah-cisse",
+     "name": "Sarah Cisse",
+     "jersey": "19",
+     "side": "away",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e2aa4823cda34f49d2b56582989537e1T1.jpg",
+     "stats": {
+      "min": 29.9,
+      "pts": 26,
+      "fgm": 11,
+      "fga": 19,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 4,
+      "fta": 4,
+      "oreb": 1,
+      "dreb": 5,
+      "reb": 6,
+      "ast": 0,
+      "stl": 1,
+      "blk": 1,
+      "to": 0,
+      "pf": 0,
+      "pm": 1
+     },
+     "tags": [
+      "26 points"
+     ]
+    },
+    {
+     "player_id": "laura-ziegler",
+     "name": "Laura Ziegler",
+     "jersey": "4",
+     "side": "home",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": null,
+     "stats": {
+      "min": 34.3,
+      "pts": 17,
+      "fgm": 7,
+      "fga": 13,
+      "tpm": 3,
+      "tpa": 7,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 1,
+      "dreb": 9,
+      "reb": 10,
+      "ast": 5,
+      "stl": 2,
+      "blk": 0,
+      "to": 1,
+      "pf": 1,
+      "pm": 5
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875389",
+   "date": "2026-09-26",
+   "tipoff_utc": "2026-09-26T18:00:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 70
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 78
+   },
+   "youtube": "https://www.youtube.com/watch?v=DbC9rCpdc6Y",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875389/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876503-charleville-mezieres-lyon"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "coline-franchelin",
+     "name": "Coline Franchelin",
+     "jersey": "2",
+     "side": "home",
+     "team": "Charleville Mezieres",
+     "team_code": "CHM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/53f2323dc5187ec648778e9bb04b42aaT1.jpg",
+     "stats": {
+      "min": 36.9,
+      "pts": 25,
+      "fgm": 8,
+      "fga": 14,
+      "tpm": 6,
+      "tpa": 8,
+      "ftm": 3,
+      "fta": 5,
+      "oreb": 1,
+      "dreb": 8,
+      "reb": 9,
+      "ast": 10,
+      "stl": 3,
+      "blk": 0,
+      "to": 3,
+      "pf": 1,
+      "pm": 0
+     },
+     "tags": [
+      "25 points",
+      "Double-double"
+     ]
+    },
+    {
+     "player_id": "bethy-mununga",
+     "name": "Bethy Mununga",
+     "jersey": "2",
+     "side": "away",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/de0d04a9e64506fc5724566e9055356eT1.jpg",
+     "stats": {
+      "min": 28.1,
+      "pts": 12,
+      "fgm": 5,
+      "fga": 8,
+      "tpm": 0,
+      "tpa": 2,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 3,
+      "dreb": 9,
+      "reb": 12,
+      "ast": 2,
+      "stl": 3,
+      "blk": 1,
+      "to": 3,
+      "pf": 2,
+      "pm": 1
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875381",
+   "date": "2026-09-27",
+   "tipoff_utc": "2026-09-27T13:15:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 76
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 81
+   },
+   "youtube": "https://www.youtube.com/watch?v=olmYMLoeweE",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875381/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876499-angers-basket-landes"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875388",
+   "date": "2026-09-27",
+   "tipoff_utc": "2026-09-27T13:30:00.000Z",
+   "round": 1,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 67
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 74
+   },
+   "youtube": "https://www.youtube.com/watch?v=vlF-MMm3rEY",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875388/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876502-la-tronche-meylan-chartres"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "assitan-kone",
+     "name": "Assitan Kone",
+     "jersey": "26",
+     "side": "away",
+     "team": "Chartres",
+     "team_code": "CTS",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/27ee25d56b487bae24bd1909d2d370d5T1.jpg",
+     "stats": {
+      "min": 20.9,
+      "pts": 23,
+      "fgm": 7,
+      "fga": 11,
+      "tpm": 1,
+      "tpa": 2,
+      "ftm": 8,
+      "fta": 9,
+      "oreb": 2,
+      "dreb": 4,
+      "reb": 6,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "to": 2,
+      "pf": 3,
+      "pm": 5
+     },
+     "tags": [
+      "23 points"
+     ]
+    },
+    {
+     "player_id": "ashunae-durant",
+     "name": "Ashunae Durant",
+     "jersey": "1",
+     "side": "home",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7a4ca41688eef7829316d409524981f1T1.jpg",
+     "stats": {
+      "min": 34.8,
+      "pts": 19,
+      "fgm": 5,
+      "fga": 10,
+      "tpm": 1,
+      "tpa": 1,
+      "ftm": 8,
+      "fta": 13,
+      "oreb": 11,
+      "dreb": 6,
+      "reb": 17,
+      "ast": 2,
+      "stl": 1,
+      "blk": 1,
+      "to": 2,
+      "pf": 0,
+      "pm": -1
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875394",
+   "date": "2026-10-03",
+   "tipoff_utc": "2026-10-03T18:00:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 57
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 66
+   },
+   "youtube": "https://www.youtube.com/watch?v=YX6A-3aBmT8",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875394/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876505-landerneau-angers"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "mariana-muadi-bulabula",
+     "name": "Mariana Muadi Bulabula",
+     "jersey": "12",
+     "side": "away",
+     "team": "Angers",
+     "team_code": "ANG",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bf949e9cb80ba80951251c6b33e88919T1.jpg",
+     "stats": {
+      "min": 37.7,
+      "pts": 16,
+      "fgm": 7,
+      "fga": 11,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 2,
+      "fta": 4,
+      "oreb": 5,
+      "dreb": 7,
+      "reb": 12,
+      "ast": 0,
+      "stl": 2,
+      "blk": 0,
+      "to": 2,
+      "pf": 2,
+      "pm": 8
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875397",
+   "date": "2026-10-03",
+   "tipoff_utc": "2026-10-03T18:00:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 90
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 83
+   },
+   "youtube": "https://www.youtube.com/watch?v=NK4XQ_MnvRo",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875397/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876506-lattes-montpellier-bourges"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "stella-johnson",
+     "name": "Stella Johnson",
+     "jersey": "7",
+     "side": "home",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/75ee6d0656166ce6c6bda056cbe1e8c4T1.jpg",
+     "stats": {
+      "min": 26.8,
+      "pts": 22,
+      "fgm": 7,
+      "fga": 11,
+      "tpm": 2,
+      "tpa": 4,
+      "ftm": 6,
+      "fta": 6,
+      "oreb": 0,
+      "dreb": 1,
+      "reb": 1,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "to": 0,
+      "pf": 2,
+      "pm": 10
+     },
+     "tags": [
+      "22 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875403",
+   "date": "2026-10-03",
+   "tipoff_utc": "2026-10-03T18:00:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 73
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 56
+   },
+   "youtube": "https://www.youtube.com/watch?v=cJyVpGRzQc0",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875403/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876508-lyon-la-tronche-meylan"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "ashunae-durant",
+     "name": "Ashunae Durant",
+     "jersey": "1",
+     "side": "away",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7a4ca41688eef7829316d409524981f1T1.jpg",
+     "stats": {
+      "min": 36.4,
+      "pts": 12,
+      "fgm": 3,
+      "fga": 11,
+      "tpm": 0,
+      "tpa": 2,
+      "ftm": 6,
+      "fta": 8,
+      "oreb": 5,
+      "dreb": 8,
+      "reb": 13,
+      "ast": 5,
+      "stl": 2,
+      "blk": 0,
+      "to": 1,
+      "pf": 2,
+      "pm": -11
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875406",
+   "date": "2026-10-03",
+   "tipoff_utc": "2026-10-03T18:00:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 54
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 75
+   },
+   "youtube": "https://www.youtube.com/watch?v=xW0ywt_c52Q",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875406/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876509-toulouse-charleville-mezieres"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875408",
+   "date": "2026-10-03",
+   "tipoff_utc": "2026-10-03T18:00:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 57
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 44
+   },
+   "youtube": "https://www.youtube.com/watch?v=CR8kcpjOW5U",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875408/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876510-basket-landes-villeneuve-d-ascq"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875399",
+   "date": "2026-10-04",
+   "tipoff_utc": "2026-10-04T13:15:00.000Z",
+   "round": 2,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 72
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 88
+   },
+   "youtube": "https://www.youtube.com/watch?v=0Cn7IAz2HEg",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875399/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876507-chartres-charnay"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "assitan-kone",
+     "name": "Assitan Kone",
+     "jersey": "26",
+     "side": "home",
+     "team": "Chartres",
+     "team_code": "CTS",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fd3091340c7f69488941af1e7bf1efe0T1.jpg",
+     "stats": {
+      "min": 23.4,
+      "pts": 21,
+      "fgm": 7,
+      "fga": 12,
+      "tpm": 2,
+      "tpa": 2,
+      "ftm": 5,
+      "fta": 5,
+      "oreb": 1,
+      "dreb": 1,
+      "reb": 2,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "to": 3,
+      "pf": 1,
+      "pm": -1
+     },
+     "tags": [
+      "21 points"
+     ]
+    },
+    {
+     "player_id": "n-deye-maye-toure",
+     "name": "N'deye Maye Touré",
+     "jersey": "21",
+     "side": "away",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c4af998719863e97273af1b2eb5a4a9eT1.jpg",
+     "stats": {
+      "min": 26.8,
+      "pts": 19,
+      "fgm": 6,
+      "fga": 12,
+      "tpm": 1,
+      "tpa": 1,
+      "ftm": 6,
+      "fta": 8,
+      "oreb": 2,
+      "dreb": 8,
+      "reb": 10,
+      "ast": 1,
+      "stl": 2,
+      "blk": 0,
+      "to": 3,
+      "pf": 2,
+      "pm": 13
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875410",
+   "date": "2026-10-07",
+   "tipoff_utc": "2026-10-07T18:00:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 68
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 79
+   },
+   "youtube": "https://www.youtube.com/watch?v=hU9QfbmZoMo",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875410/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876511-angers-lattes-montpellier"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "garance-rabot",
+     "name": "Garance Rabot",
+     "jersey": "26",
+     "side": "away",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/2d54770deb550d6e8ab947550c703915T1.jpg",
+     "stats": {
+      "min": 30.1,
+      "pts": 18,
+      "fgm": 8,
+      "fga": 11,
+      "tpm": 1,
+      "tpa": 3,
+      "ftm": 1,
+      "fta": 2,
+      "oreb": 1,
+      "dreb": 9,
+      "reb": 10,
+      "ast": 4,
+      "stl": 1,
+      "blk": 0,
+      "to": 7,
+      "pf": 4,
+      "pm": 9
+     },
+     "tags": [
+      "Double-double"
+     ]
+    },
+    {
+     "player_id": "sarah-cisse",
+     "name": "Sarah Cisse",
+     "jersey": "19",
+     "side": "away",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e2aa4823cda34f49d2b56582989537e1T1.jpg",
+     "stats": {
+      "min": 29.7,
+      "pts": 10,
+      "fgm": 4,
+      "fga": 9,
+      "tpm": 2,
+      "tpa": 2,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 1,
+      "dreb": 9,
+      "reb": 10,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "to": 4,
+      "pf": 3,
+      "pm": 9
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875415",
+   "date": "2026-10-07",
+   "tipoff_utc": "2026-10-07T18:00:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 74
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 69
+   },
+   "youtube": "https://www.youtube.com/watch?v=lIzQIL21Mxs",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875415/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876513-charnay-lyon"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "n-deye-maye-toure",
+     "name": "N'deye Maye Touré",
+     "jersey": "21",
+     "side": "home",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c4af998719863e97273af1b2eb5a4a9eT1.jpg",
+     "stats": {
+      "min": 32,
+      "pts": 14,
+      "fgm": 6,
+      "fga": 12,
+      "tpm": 0,
+      "tpa": 4,
+      "ftm": 2,
+      "fta": 4,
+      "oreb": 3,
+      "dreb": 8,
+      "reb": 11,
+      "ast": 3,
+      "stl": 1,
+      "blk": 2,
+      "to": 4,
+      "pf": 4,
+      "pm": 7
+     },
+     "tags": [
+      "Double-double"
+     ]
+    },
+    {
+     "player_id": "samantha-peytour",
+     "name": "Samantha Peytour",
+     "jersey": "77",
+     "side": "away",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/845b5e37a3a20f8349a0e84198f0f324T1.jpg",
+     "stats": {
+      "min": 29,
+      "pts": 13,
+      "fgm": 6,
+      "fga": 13,
+      "tpm": 1,
+      "tpa": 4,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 8,
+      "dreb": 4,
+      "reb": 12,
+      "ast": 0,
+      "stl": 0,
+      "blk": 1,
+      "to": 2,
+      "pf": 3,
+      "pm": -20
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875417",
+   "date": "2026-10-07",
+   "tipoff_utc": "2026-10-07T18:00:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 62
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 53
+   },
+   "youtube": "https://www.youtube.com/watch?v=dnIFFuIVDVQ",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875417/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876514-la-tronche-meylan-toulouse"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "ashunae-durant",
+     "name": "Ashunae Durant",
+     "jersey": "1",
+     "side": "home",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7a4ca41688eef7829316d409524981f1T1.jpg",
+     "stats": {
+      "min": 32.6,
+      "pts": 19,
+      "fgm": 6,
+      "fga": 12,
+      "tpm": 1,
+      "tpa": 3,
+      "ftm": 6,
+      "fta": 9,
+      "oreb": 6,
+      "dreb": 10,
+      "reb": 16,
+      "ast": 5,
+      "stl": 3,
+      "blk": 0,
+      "to": 4,
+      "pf": 2,
+      "pm": 9
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875420",
+   "date": "2026-10-07",
+   "tipoff_utc": "2026-10-07T18:00:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 59
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 74
+   },
+   "youtube": "https://www.youtube.com/watch?v=ep8IVi-mTWI",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875420/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876516-villeneuve-d-ascq-landerneau"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "harmoni-turner",
+     "name": "Harmoni Turner",
+     "jersey": "14",
+     "side": "away",
+     "team": "Landerneau",
+     "team_code": "LDN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/cf47f21d34cc3af3d42f154c56131be5T1.jpg",
+     "stats": {
+      "min": 28.9,
+      "pts": 29,
+      "fgm": 11,
+      "fga": 17,
+      "tpm": 2,
+      "tpa": 5,
+      "ftm": 5,
+      "fta": 6,
+      "oreb": 1,
+      "dreb": 3,
+      "reb": 4,
+      "ast": 4,
+      "stl": 1,
+      "blk": 0,
+      "to": 1,
+      "pf": 1,
+      "pm": 23
+     },
+     "tags": [
+      "29 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875419",
+   "date": "2026-10-07",
+   "tipoff_utc": "2026-10-07T18:30:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 61
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 69
+   },
+   "youtube": "https://www.youtube.com/watch?v=sn4ybMfP9Jw",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875419/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876515-charleville-mezieres-basket-landes"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "coline-franchelin",
+     "name": "Coline Franchelin",
+     "jersey": "2",
+     "side": "home",
+     "team": "Charleville Mezieres",
+     "team_code": "CHM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/53f2323dc5187ec648778e9bb04b42aaT1.jpg",
+     "stats": {
+      "min": 33.5,
+      "pts": 13,
+      "fgm": 5,
+      "fga": 16,
+      "tpm": 1,
+      "tpa": 7,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 0,
+      "dreb": 3,
+      "reb": 3,
+      "ast": 10,
+      "stl": 1,
+      "blk": 0,
+      "to": 2,
+      "pf": 2,
+      "pm": -7
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875426",
+   "date": "2026-10-10",
+   "tipoff_utc": "2026-10-10T18:00:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 37
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 79
+   },
+   "youtube": "https://www.youtube.com/watch?v=uLAMZMcfl4U",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875426/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876519-toulouse-charnay"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875428",
+   "date": "2026-10-10",
+   "tipoff_utc": "2026-10-10T18:00:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 91
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 51
+   },
+   "youtube": "https://www.youtube.com/watch?v=Z2i2AxQhVtg",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875428/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876520-basket-landes-la-tronche-meylan"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "murjanatu-musa",
+     "name": "Murjanatu Musa",
+     "jersey": "11",
+     "side": "home",
+     "team": "Basket Landes",
+     "team_code": "LAN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d7f18e206907ef886365bfacd27304e0T1.jpg",
+     "stats": {
+      "min": 20.4,
+      "pts": 13,
+      "fgm": 6,
+      "fga": 11,
+      "tpm": 1,
+      "tpa": 1,
+      "ftm": 0,
+      "fta": 2,
+      "oreb": 3,
+      "dreb": 7,
+      "reb": 10,
+      "ast": 2,
+      "stl": 1,
+      "blk": 1,
+      "to": 0,
+      "pf": 2,
+      "pm": 13
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875430",
+   "date": "2026-10-10",
+   "tipoff_utc": "2026-10-10T18:00:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 61
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 83
+   },
+   "youtube": "https://www.youtube.com/watch?v=4qvU2UzMrP8",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875430/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876521-landerneau-charleville-mezieres"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "coline-franchelin",
+     "name": "Coline Franchelin",
+     "jersey": "2",
+     "side": "away",
+     "team": "Charleville Mezieres",
+     "team_code": "CHM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/53f2323dc5187ec648778e9bb04b42aaT1.jpg",
+     "stats": {
+      "min": 31.4,
+      "pts": 11,
+      "fgm": 3,
+      "fga": 7,
+      "tpm": 2,
+      "tpa": 4,
+      "ftm": 3,
+      "fta": 4,
+      "oreb": 0,
+      "dreb": 4,
+      "reb": 4,
+      "ast": 12,
+      "stl": 6,
+      "blk": 0,
+      "to": 3,
+      "pf": 2,
+      "pm": 19
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875432",
+   "date": "2026-10-10",
+   "tipoff_utc": "2026-10-10T18:00:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 62
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 61
+   },
+   "youtube": "https://www.youtube.com/watch?v=pJ7zmRx0HiI",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875432/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876522-lattes-montpellier-villeneuve-d-ascq"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "anna-ngo-ndjock",
+     "name": "Anna Ngo Ndjock",
+     "jersey": "0",
+     "side": "away",
+     "team": "Villeneuve d'Ascq",
+     "team_code": "VIL",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/87bb98a78da2f26213290f8925852e81T1.jpg",
+     "stats": {
+      "min": 37.4,
+      "pts": 22,
+      "fgm": 9,
+      "fga": 20,
+      "tpm": 1,
+      "tpa": 6,
+      "ftm": 3,
+      "fta": 4,
+      "oreb": 1,
+      "dreb": 3,
+      "reb": 4,
+      "ast": 6,
+      "stl": 5,
+      "blk": 0,
+      "to": 3,
+      "pf": 2,
+      "pm": -4
+     },
+     "tags": [
+      "22 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875424",
+   "date": "2026-10-11",
+   "tipoff_utc": "2026-10-11T13:15:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 59
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 72
+   },
+   "youtube": "https://www.youtube.com/watch?v=LrwF7nekihg",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875424/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876518-lyon-bourges"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "shakayla-nicole-thomas",
+     "name": "Shakayla Nicole Thomas",
+     "jersey": "20",
+     "side": "away",
+     "team": "Bourges",
+     "team_code": "BOU",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c57859f9d87b5e9449cea622be6e637eT1.jpg",
+     "stats": {
+      "min": 26.3,
+      "pts": 23,
+      "fgm": 8,
+      "fga": 13,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 7,
+      "fta": 7,
+      "oreb": 0,
+      "dreb": 2,
+      "reb": 2,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "to": 2,
+      "pf": 1,
+      "pm": 9
+     },
+     "tags": [
+      "23 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875434",
+   "date": "2026-10-17",
+   "tipoff_utc": "2026-10-17T18:00:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 63
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 69
+   },
+   "youtube": "https://www.youtube.com/watch?v=Zr1i2mPRkwE",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875434/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876523-angers-lyon"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "bethy-mununga",
+     "name": "Bethy Mununga",
+     "jersey": "2",
+     "side": "away",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/de0d04a9e64506fc5724566e9055356eT1.jpg",
+     "stats": {
+      "min": 38,
+      "pts": 10,
+      "fgm": 4,
+      "fga": 5,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 2,
+      "fta": 4,
+      "oreb": 5,
+      "dreb": 10,
+      "reb": 15,
+      "ast": 1,
+      "stl": 3,
+      "blk": 1,
+      "to": 4,
+      "pf": 2,
+      "pm": 7
+     },
+     "tags": [
+      "Double-double"
+     ]
+    },
+    {
+     "player_id": "mariana-muadi-bulabula",
+     "name": "Mariana Muadi Bulabula",
+     "jersey": "12",
+     "side": "home",
+     "team": "Angers",
+     "team_code": "ANG",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bf949e9cb80ba80951251c6b33e88919T1.jpg",
+     "stats": {
+      "min": 35.1,
+      "pts": 10,
+      "fgm": 5,
+      "fga": 8,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 4,
+      "dreb": 7,
+      "reb": 11,
+      "ast": 2,
+      "stl": 3,
+      "blk": 2,
+      "to": 1,
+      "pf": 1,
+      "pm": -5
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875436",
+   "date": "2026-10-17",
+   "tipoff_utc": "2026-10-17T18:00:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 87
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 69
+   },
+   "youtube": "https://www.youtube.com/watch?v=zpW8oacH0bo",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875436/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876524-bourges-toulouse"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "dominique-toussaint",
+     "name": "Dominique Toussaint",
+     "jersey": "22",
+     "side": "away",
+     "team": "Toulouse",
+     "team_code": "TOU",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/025374a3ba76b2a92da7f72a2cdbcf2bT1.jpg",
+     "stats": {
+      "min": 33.3,
+      "pts": 25,
+      "fgm": 10,
+      "fga": 16,
+      "tpm": 2,
+      "tpa": 7,
+      "ftm": 3,
+      "fta": 3,
+      "oreb": 0,
+      "dreb": 5,
+      "reb": 5,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "to": 5,
+      "pf": 3,
+      "pm": -10
+     },
+     "tags": [
+      "25 points"
+     ]
+    },
+    {
+     "player_id": "sydney-tamara-nicole-wallace",
+     "name": "Sydney Tamara Nicole Wallace",
+     "jersey": "23",
+     "side": "home",
+     "team": "Bourges",
+     "team_code": "BOU",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/61f2c44ebe204b819d8b456796fae02aT1.jpg",
+     "stats": {
+      "min": 26.4,
+      "pts": 24,
+      "fgm": 8,
+      "fga": 12,
+      "tpm": 6,
+      "tpa": 10,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 0,
+      "dreb": 1,
+      "reb": 1,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "to": 0,
+      "pf": 2,
+      "pm": 6
+     },
+     "tags": [
+      "24 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875438",
+   "date": "2026-10-17",
+   "tipoff_utc": "2026-10-17T18:00:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 50
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 54
+   },
+   "youtube": "https://www.youtube.com/watch?v=seF8fuuDUOw",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875438/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876525-charnay-basket-landes"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875442",
+   "date": "2026-10-18",
+   "tipoff_utc": "2026-10-18T13:00:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 82
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 51
+   },
+   "youtube": "https://www.youtube.com/watch?v=YVQdgX6pDmY",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875442/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876527-charleville-mezieres-lattes-montpellier"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875440",
+   "date": "2026-10-18",
+   "tipoff_utc": "2026-10-18T13:15:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 64
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 67
+   },
+   "youtube": "https://www.youtube.com/watch?v=Mr4py0po1Lk",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875440/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876526-la-tronche-meylan-landerneau"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "harmoni-turner",
+     "name": "Harmoni Turner",
+     "jersey": "14",
+     "side": "away",
+     "team": "Landerneau",
+     "team_code": "LDN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/cf47f21d34cc3af3d42f154c56131be5T1.jpg",
+     "stats": {
+      "min": 34,
+      "pts": 22,
+      "fgm": 8,
+      "fga": 15,
+      "tpm": 2,
+      "tpa": 4,
+      "ftm": 4,
+      "fta": 4,
+      "oreb": 4,
+      "dreb": 2,
+      "reb": 6,
+      "ast": 4,
+      "stl": 3,
+      "blk": 0,
+      "to": 5,
+      "pf": 2,
+      "pm": 2
+     },
+     "tags": [
+      "22 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875444",
+   "date": "2026-10-18",
+   "tipoff_utc": "2026-10-18T13:30:00.000Z",
+   "round": 5,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 80
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 57
+   },
+   "youtube": "https://www.youtube.com/watch?v=NLGxi33D5bI",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875444/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876528-villeneuve-d-ascq-chartres"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "anna-ngo-ndjock",
+     "name": "Anna Ngo Ndjock",
+     "jersey": "0",
+     "side": "home",
+     "team": "Villeneuve d'Ascq",
+     "team_code": "VIL",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/87bb98a78da2f26213290f8925852e81T1.jpg",
+     "stats": {
+      "min": 27.2,
+      "pts": 24,
+      "fgm": 8,
+      "fga": 15,
+      "tpm": 1,
+      "tpa": 4,
+      "ftm": 7,
+      "fta": 8,
+      "oreb": 2,
+      "dreb": 3,
+      "reb": 5,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "to": 0,
+      "pf": 3,
+      "pm": 13
+     },
+     "tags": [
+      "24 points"
+     ]
+    },
+    {
+     "player_id": "assitan-kone",
+     "name": "Assitan Kone",
+     "jersey": "26",
+     "side": "away",
+     "team": "Chartres",
+     "team_code": "CTS",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fd3091340c7f69488941af1e7bf1efe0T1.jpg",
+     "stats": {
+      "min": 26.7,
+      "pts": 14,
+      "fgm": 5,
+      "fga": 14,
+      "tpm": 1,
+      "tpa": 1,
+      "ftm": 3,
+      "fta": 4,
+      "oreb": 4,
+      "dreb": 6,
+      "reb": 10,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "to": 2,
+      "pf": 2,
+      "pm": -10
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875456",
+   "date": "2026-10-23",
+   "tipoff_utc": "2026-10-23T18:00:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 77
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 86
+   },
+   "youtube": "https://www.youtube.com/watch?v=x9w3Z1ShZuI",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875456/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876534-lyon-villeneuve-d-ascq"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "bria-hartley",
+     "name": "Bria Hartley",
+     "jersey": "14",
+     "side": "away",
+     "team": "Villeneuve d'Ascq",
+     "team_code": "VIL",
+     "starter": false,
+     "photo": null,
+     "stats": {
+      "min": 27.4,
+      "pts": 20,
+      "fgm": 6,
+      "fga": 12,
+      "tpm": 3,
+      "tpa": 6,
+      "ftm": 5,
+      "fta": 8,
+      "oreb": 1,
+      "dreb": 4,
+      "reb": 5,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "to": 3,
+      "pf": 4,
+      "pm": 16
+     },
+     "tags": [
+      "20 points"
+     ]
+    },
+    {
+     "player_id": "leck-olivia-yale",
+     "name": "Leck-Olivia Yale",
+     "jersey": "30",
+     "side": "home",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c36bca679af97cdf611a6b05022468b2T1.jpg",
+     "stats": {
+      "min": 37.2,
+      "pts": 20,
+      "fgm": 8,
+      "fga": 16,
+      "tpm": 2,
+      "tpa": 8,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 1,
+      "dreb": 3,
+      "reb": 4,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "to": 0,
+      "pf": 4,
+      "pm": -1
+     },
+     "tags": [
+      "20 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875446",
+   "date": "2026-10-24",
+   "tipoff_utc": "2026-10-24T18:00:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 70
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 75
+   },
+   "youtube": "https://www.youtube.com/watch?v=yx7rvfOu0NY",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875446/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876529-toulouse-angers"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "mariana-muadi-bulabula",
+     "name": "Mariana Muadi Bulabula",
+     "jersey": "12",
+     "side": "away",
+     "team": "Angers",
+     "team_code": "ANG",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bf949e9cb80ba80951251c6b33e88919T1.jpg",
+     "stats": {
+      "min": 35.5,
+      "pts": 20,
+      "fgm": 6,
+      "fga": 13,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 8,
+      "fta": 10,
+      "oreb": 4,
+      "dreb": 6,
+      "reb": 10,
+      "ast": 1,
+      "stl": 2,
+      "blk": 0,
+      "to": 4,
+      "pf": 3,
+      "pm": 5
+     },
+     "tags": [
+      "20 points",
+      "Double-double"
+     ]
+    },
+    {
+     "player_id": "dayshanette-harris",
+     "name": "Dayshanette Harris",
+     "jersey": "1",
+     "side": "away",
+     "team": "Angers",
+     "team_code": "ANG",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b23ca5f81e320fdd5693385867dc40e5T1.jpg",
+     "stats": {
+      "min": 32,
+      "pts": 13,
+      "fgm": 5,
+      "fga": 11,
+      "tpm": 1,
+      "tpa": 5,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 1,
+      "dreb": 5,
+      "reb": 6,
+      "ast": 11,
+      "stl": 1,
+      "blk": 0,
+      "to": 4,
+      "pf": 2,
+      "pm": 5
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875448",
+   "date": "2026-10-25",
+   "tipoff_utc": "2026-10-25T14:00:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 67
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 64
+   },
+   "youtube": "https://www.youtube.com/watch?v=FBa3R7HMn08",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875448/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876530-basket-landes-bourges"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "murjanatu-musa",
+     "name": "Murjanatu Musa",
+     "jersey": "11",
+     "side": "home",
+     "team": "Basket Landes",
+     "team_code": "LAN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d7f18e206907ef886365bfacd27304e0T1.jpg",
+     "stats": {
+      "min": 22,
+      "pts": 11,
+      "fgm": 5,
+      "fga": 8,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 1,
+      "fta": 1,
+      "oreb": 5,
+      "dreb": 7,
+      "reb": 12,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "to": 2,
+      "pf": 4,
+      "pm": 15
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875450",
+   "date": "2026-10-25",
+   "tipoff_utc": "2026-10-25T14:15:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 87
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 85
+   },
+   "youtube": "https://www.youtube.com/watch?v=CCL2f1HhofA",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875450/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876531-landerneau-charnay"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "harmoni-turner",
+     "name": "Harmoni Turner",
+     "jersey": "14",
+     "side": "home",
+     "team": "Landerneau",
+     "team_code": "LDN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/cf47f21d34cc3af3d42f154c56131be5T1.jpg",
+     "stats": {
+      "min": 38.3,
+      "pts": 27,
+      "fgm": 9,
+      "fga": 23,
+      "tpm": 5,
+      "tpa": 13,
+      "ftm": 4,
+      "fta": 4,
+      "oreb": 2,
+      "dreb": 5,
+      "reb": 7,
+      "ast": 5,
+      "stl": 2,
+      "blk": 0,
+      "to": 1,
+      "pf": 3,
+      "pm": 9
+     },
+     "tags": [
+      "27 points"
+     ]
+    },
+    {
+     "player_id": "n-deye-maye-toure",
+     "name": "N'deye Maye Touré",
+     "jersey": "21",
+     "side": "away",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c4af998719863e97273af1b2eb5a4a9eT1.jpg",
+     "stats": {
+      "min": 32.1,
+      "pts": 23,
+      "fgm": 9,
+      "fga": 17,
+      "tpm": 2,
+      "tpa": 4,
+      "ftm": 3,
+      "fta": 5,
+      "oreb": 2,
+      "dreb": 5,
+      "reb": 7,
+      "ast": 2,
+      "stl": 1,
+      "blk": 3,
+      "to": 1,
+      "pf": 4,
+      "pm": -14
+     },
+     "tags": [
+      "23 points"
+     ]
+    },
+    {
+     "player_id": "laura-ziegler",
+     "name": "Laura Ziegler",
+     "jersey": "4",
+     "side": "away",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7ad393cebcb20557c7740fc4a95aba22T1.jpg",
+     "stats": {
+      "min": 41.8,
+      "pts": 13,
+      "fgm": 6,
+      "fga": 15,
+      "tpm": 1,
+      "tpa": 6,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 0,
+      "dreb": 10,
+      "reb": 10,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "to": 2,
+      "pf": 0,
+      "pm": 1
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "youtube"
+  },
+  {
+   "id": "2875452",
+   "date": "2026-10-25",
+   "tipoff_utc": "2026-10-25T14:30:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 80
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 74
+   },
+   "youtube": "https://www.youtube.com/watch?v=oWOSZXQa26E",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875452/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876532-lattes-montpellier-la-tronche-meylan"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "stella-johnson",
+     "name": "Stella Johnson",
+     "jersey": "7",
+     "side": "home",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/75ee6d0656166ce6c6bda056cbe1e8c4T1.jpg",
+     "stats": {
+      "min": 29.8,
+      "pts": 27,
+      "fgm": 10,
+      "fga": 19,
+      "tpm": 2,
+      "tpa": 5,
+      "ftm": 5,
+      "fta": 7,
+      "oreb": 3,
+      "dreb": 6,
+      "reb": 9,
+      "ast": 3,
+      "stl": 1,
+      "blk": 1,
+      "to": 4,
+      "pf": 4,
+      "pm": 17
+     },
+     "tags": [
+      "27 points"
+     ]
+    },
+    {
+     "player_id": "elena-zemoura",
+     "name": "Éléna Zemoura",
+     "jersey": "2",
+     "side": "away",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c718d9919c9ef96144e5bd930c09f3e5T1.jpg",
+     "stats": {
+      "min": 28.8,
+      "pts": 12,
+      "fgm": 5,
+      "fga": 11,
+      "tpm": 0,
+      "tpa": 1,
+      "ftm": 2,
+      "fta": 5,
+      "oreb": 6,
+      "dreb": 5,
+      "reb": 11,
+      "ast": 4,
+      "stl": 0,
+      "blk": 0,
+      "to": 2,
+      "pf": 3,
+      "pm": -7
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875454",
+   "date": "2026-10-25",
+   "tipoff_utc": "2026-10-25T14:30:00.000Z",
+   "round": 6,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 63
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 72
+   },
+   "youtube": "https://www.youtube.com/watch?v=yahQ75jLDnE",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875454/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876533-chartres-charleville-mezieres"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875460",
+   "date": "2026-10-31",
+   "tipoff_utc": "2026-10-31T19:00:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 67
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 55
+   },
+   "youtube": "https://www.youtube.com/watch?v=7F-w6PriKks",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875460/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876536-charleville-mezieres-bourges"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875462",
+   "date": "2026-10-31",
+   "tipoff_utc": "2026-10-31T19:00:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 84
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 87
+   },
+   "youtube": "https://www.youtube.com/watch?v=9jyItPB0deQ",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875462/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876537-la-tronche-meylan-charnay"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "binta-drame",
+     "name": "Binta Drame",
+     "jersey": "32",
+     "side": "away",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/50fef685dc017ba4f83f1e79f7ce1898T1.jpg",
+     "stats": {
+      "min": 30.7,
+      "pts": 21,
+      "fgm": 9,
+      "fga": 12,
+      "tpm": 1,
+      "tpa": 2,
+      "ftm": 2,
+      "fta": 5,
+      "oreb": 0,
+      "dreb": 3,
+      "reb": 3,
+      "ast": 3,
+      "stl": 4,
+      "blk": 1,
+      "to": 3,
+      "pf": 2,
+      "pm": 5
+     },
+     "tags": [
+      "21 points"
+     ]
+    },
+    {
+     "player_id": "merveille-lokoka",
+     "name": "Merveille Lokoka",
+     "jersey": "9",
+     "side": "home",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": false,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/43ad25a4598d4bbe2939cc4b2bc17655T1.jpg",
+     "stats": {
+      "min": 28.1,
+      "pts": 20,
+      "fgm": 7,
+      "fga": 8,
+      "tpm": 0,
+      "tpa": 1,
+      "ftm": 6,
+      "fta": 8,
+      "oreb": 4,
+      "dreb": 1,
+      "reb": 5,
+      "ast": 2,
+      "stl": 3,
+      "blk": 1,
+      "to": 2,
+      "pf": 2,
+      "pm": 7
+     },
+     "tags": [
+      "20 points"
+     ]
+    },
+    {
+     "player_id": "laura-ziegler",
+     "name": "Laura Ziegler",
+     "jersey": "4",
+     "side": "away",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7ad393cebcb20557c7740fc4a95aba22T1.jpg",
+     "stats": {
+      "min": 36.5,
+      "pts": 15,
+      "fgm": 6,
+      "fga": 17,
+      "tpm": 0,
+      "tpa": 3,
+      "ftm": 3,
+      "fta": 5,
+      "oreb": 3,
+      "dreb": 9,
+      "reb": 12,
+      "ast": 4,
+      "stl": 1,
+      "blk": 0,
+      "to": 2,
+      "pf": 2,
+      "pm": 10
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875464",
+   "date": "2026-10-31",
+   "tipoff_utc": "2026-10-31T19:00:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 61
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 60
+   },
+   "youtube": "https://www.youtube.com/watch?v=q1asMYEKsZ4",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875464/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876538-toulouse-basket-landes"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "jessica-lindstrom",
+     "name": "Jessica Lindstrom",
+     "jersey": "21",
+     "side": "home",
+     "team": "Toulouse",
+     "team_code": "TOU",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/4bc84622ce615721b3dee070dea67b72T1.jpg",
+     "stats": {
+      "min": 34.3,
+      "pts": 11,
+      "fgm": 4,
+      "fga": 6,
+      "tpm": 3,
+      "tpa": 4,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 0,
+      "dreb": 10,
+      "reb": 10,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "to": 1,
+      "pf": 3,
+      "pm": 10
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875468",
+   "date": "2026-11-01",
+   "tipoff_utc": "2026-11-01T14:00:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 58
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 70
+   },
+   "youtube": "https://www.youtube.com/watch?v=2gKligsY3h8",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875468/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876540-chartres-lattes-montpellier"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "oumou-sallymata-diarisso",
+     "name": "Oumou Sallymata Diarisso",
+     "jersey": "76",
+     "side": "away",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fb545a06ee1f2a38d8b9aae8b8765205T1.jpg",
+     "stats": {
+      "min": 31.2,
+      "pts": 12,
+      "fgm": 6,
+      "fga": 13,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 3,
+      "dreb": 12,
+      "reb": 15,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "to": 1,
+      "pf": 3,
+      "pm": 17
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875466",
+   "date": "2026-11-01",
+   "tipoff_utc": "2026-11-01T14:15:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 58
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 42
+   },
+   "youtube": "https://www.youtube.com/watch?v=xn0n041MdNY",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875466/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876539-lyon-landerneau"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "samantha-peytour",
+     "name": "Samantha Peytour",
+     "jersey": "77",
+     "side": "home",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/845b5e37a3a20f8349a0e84198f0f324T1.jpg",
+     "stats": {
+      "min": 32.9,
+      "pts": 16,
+      "fgm": 7,
+      "fga": 10,
+      "tpm": 0,
+      "tpa": 0,
+      "ftm": 2,
+      "fta": 4,
+      "oreb": 4,
+      "dreb": 8,
+      "reb": 12,
+      "ast": 1,
+      "stl": 3,
+      "blk": 0,
+      "to": 0,
+      "pf": 2,
+      "pm": 10
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875458",
+   "date": "2026-11-01",
+   "tipoff_utc": "2026-11-01T14:30:00.000Z",
+   "round": 7,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 78
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 71
+   },
+   "youtube": "https://www.youtube.com/watch?v=uWOW864MjTA",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875458/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876535-villeneuve-d-ascq-angers"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875470",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:00:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": 53
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": 72
+   },
+   "youtube": "https://www.youtube.com/watch?v=mOS_PnPoHc0",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875470/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876541-angers-charleville-mezieres"
+   },
+   "played": true,
+   "perfs": [],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875472",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:00:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": 83
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": 68
+   },
+   "youtube": "https://www.youtube.com/watch?v=jQTMjdNFD5E",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875472/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876542-bourges-la-tronche-meylan"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "ashunae-durant",
+     "name": "Ashunae Durant",
+     "jersey": "1",
+     "side": "away",
+     "team": "La Tronche Meylan",
+     "team_code": "LTM",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8b75697ed1d226308755d2900fba73fbT1.jpg",
+     "stats": {
+      "min": 36.7,
+      "pts": 20,
+      "fgm": 6,
+      "fga": 13,
+      "tpm": 1,
+      "tpa": 1,
+      "ftm": 7,
+      "fta": 7,
+      "oreb": 1,
+      "dreb": 7,
+      "reb": 8,
+      "ast": 7,
+      "stl": 1,
+      "blk": 0,
+      "to": 2,
+      "pf": 0,
+      "pm": 0
+     },
+     "tags": [
+      "20 points"
+     ]
+    },
+    {
+     "player_id": "maeva-djaldi-tabdi",
+     "name": "Maëva Djaldi-Tabdi",
+     "jersey": "3",
+     "side": "home",
+     "team": "Bourges",
+     "team_code": "BOU",
+     "starter": false,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/6cffd3dc780ab038a9da500a9daf3a2bT1.jpg",
+     "stats": {
+      "min": 25.8,
+      "pts": 18,
+      "fgm": 8,
+      "fga": 10,
+      "tpm": 1,
+      "tpa": 2,
+      "ftm": 1,
+      "fta": 1,
+      "oreb": 6,
+      "dreb": 11,
+      "reb": 17,
+      "ast": 4,
+      "stl": 0,
+      "blk": 1,
+      "to": 4,
+      "pf": 4,
+      "pm": 21
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875474",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:00:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": 90
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": 73
+   },
+   "youtube": "https://www.youtube.com/watch?v=fZW6cr-b5So",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875474/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876543-charnay-villeneuve-d-ascq"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "mckenzie-forbes",
+     "name": "Mckenzie Forbes",
+     "jersey": "25",
+     "side": "home",
+     "team": "Charnay",
+     "team_code": "CNY",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8347ea85baf1f8c29aed11708fd3aec5T1.jpg",
+     "stats": {
+      "min": 26,
+      "pts": 23,
+      "fgm": 7,
+      "fga": 13,
+      "tpm": 6,
+      "tpa": 10,
+      "ftm": 3,
+      "fta": 4,
+      "oreb": 0,
+      "dreb": 1,
+      "reb": 1,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "to": 3,
+      "pf": 2,
+      "pm": 12
+     },
+     "tags": [
+      "23 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875476",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:00:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": 62
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": 68
+   },
+   "youtube": "https://www.youtube.com/watch?v=SD2BgR0atng",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875476/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876544-basket-landes-lyon"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "ainhoa-risacher",
+     "name": "Ainhoa Risacher",
+     "jersey": "10",
+     "side": "away",
+     "team": "Lyon",
+     "team_code": "LYO",
+     "starter": false,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/ec4ee6b9c3ebd039e7853fc746dd4fd8T1.jpg",
+     "stats": {
+      "min": 29.1,
+      "pts": 21,
+      "fgm": 8,
+      "fga": 10,
+      "tpm": 2,
+      "tpa": 2,
+      "ftm": 3,
+      "fta": 3,
+      "oreb": 0,
+      "dreb": 4,
+      "reb": 4,
+      "ast": 3,
+      "stl": 2,
+      "blk": 0,
+      "to": 5,
+      "pf": 3,
+      "pm": 8
+     },
+     "tags": [
+      "21 points"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875477",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:00:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": 80
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": 62
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875477/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876545-landerneau-chartres"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "harmoni-turner",
+     "name": "Harmoni Turner",
+     "jersey": "14",
+     "side": "home",
+     "team": "Landerneau",
+     "team_code": "LDN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/cf47f21d34cc3af3d42f154c56131be5T1.jpg",
+     "stats": {
+      "min": 26.6,
+      "pts": 24,
+      "fgm": 9,
+      "fga": 17,
+      "tpm": 4,
+      "tpa": 7,
+      "ftm": 2,
+      "fta": 2,
+      "oreb": 0,
+      "dreb": 1,
+      "reb": 1,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "to": 3,
+      "pf": 3,
+      "pm": 24
+     },
+     "tags": [
+      "24 points"
+     ]
+    },
+    {
+     "player_id": "susannah-rafiu",
+     "name": "Susannah Rafiu",
+     "jersey": "0",
+     "side": "home",
+     "team": "Landerneau",
+     "team_code": "LDN",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a6cb4f5089d4197c7ca9208b7fe2e254T1.jpg",
+     "stats": {
+      "min": 30.3,
+      "pts": 14,
+      "fgm": 6,
+      "fga": 7,
+      "tpm": 2,
+      "tpa": 3,
+      "ftm": 0,
+      "fta": 0,
+      "oreb": 3,
+      "dreb": 7,
+      "reb": 10,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "to": 0,
+      "pf": 3,
+      "pm": 10
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": null
+  },
+  {
+   "id": "2875479",
+   "date": "2026-11-07",
+   "tipoff_utc": "2026-11-07T19:30:00.000Z",
+   "round": 8,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": 79
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": 69
+   },
+   "youtube": "https://www.youtube.com/watch?v=PwYTzjuhrbQ",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875479/",
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876546-lattes-montpellier-toulouse"
+   },
+   "played": true,
+   "perfs": [
+    {
+     "player_id": "stella-johnson",
+     "name": "Stella Johnson",
+     "jersey": "7",
+     "side": "home",
+     "team": "Lattes Montpellier",
+     "team_code": "MTP",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/75ee6d0656166ce6c6bda056cbe1e8c4T1.jpg",
+     "stats": {
+      "min": 31.1,
+      "pts": 20,
+      "fgm": 7,
+      "fga": 16,
+      "tpm": 1,
+      "tpa": 4,
+      "ftm": 5,
+      "fta": 6,
+      "oreb": 0,
+      "dreb": 1,
+      "reb": 1,
+      "ast": 6,
+      "stl": 0,
+      "blk": 0,
+      "to": 5,
+      "pf": 4,
+      "pm": 15
+     },
+     "tags": [
+      "20 points"
+     ]
+    },
+    {
+     "player_id": "jessica-lindstrom",
+     "name": "Jessica Lindstrom",
+     "jersey": "21",
+     "side": "away",
+     "team": "Toulouse",
+     "team_code": "TOU",
+     "starter": true,
+     "photo": "https://images.statsengine.playbyplay.api.geniussports.com/4bc84622ce615721b3dee070dea67b72T1.jpg",
+     "stats": {
+      "min": 38.6,
+      "pts": 19,
+      "fgm": 6,
+      "fga": 12,
+      "tpm": 3,
+      "tpa": 6,
+      "ftm": 4,
+      "fta": 6,
+      "oreb": 5,
+      "dreb": 11,
+      "reb": 16,
+      "ast": 2,
+      "stl": 1,
+      "blk": 1,
+      "to": 1,
+      "pf": 2,
+      "pm": -6
+     },
+     "tags": [
+      "Double-double"
+     ]
+    }
+   ],
+   "validated": true,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875485",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:15:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875485/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875483",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:30:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": "https://www.youtube.com/watch?v=HnuBSrVFOy8",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875483/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875488",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:30:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875488/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875491",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:30:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": "https://www.youtube.com/watch?v=nYE05EbLDaw",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875491/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875494",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:30:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": "https://www.youtube.com/watch?v=_y9-KsIWkfE",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875494/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875495",
+   "date": "2026-11-22",
+   "tipoff_utc": "2026-11-22T14:30:00.000Z",
+   "round": 9,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": "https://www.youtube.com/watch?v=ql3GMwMRIUU",
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875495/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": "lfb"
+  },
+  {
+   "id": "2875503",
+   "date": "2026-11-28",
+   "tipoff_utc": "2026-11-28T19:00:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875503/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875507",
+   "date": "2026-11-28",
+   "tipoff_utc": "2026-11-28T19:00:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875507/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875497",
+   "date": "2026-11-28",
+   "tipoff_utc": "2026-11-28T20:00:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875497/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875499",
+   "date": "2026-11-29",
+   "tipoff_utc": "2026-11-29T14:15:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875499/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875506",
+   "date": "2026-11-29",
+   "tipoff_utc": "2026-11-29T14:30:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875506/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875508",
+   "date": "2026-11-29",
+   "tipoff_utc": "2026-11-29T15:00:00.000Z",
+   "round": 10,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875508/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875509",
+   "date": "2026-12-05",
+   "tipoff_utc": "2026-12-05T19:00:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875509/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875512",
+   "date": "2026-12-06",
+   "tipoff_utc": "2026-12-06T14:00:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875512/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875520",
+   "date": "2026-12-06",
+   "tipoff_utc": "2026-12-06T14:15:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875520/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875516",
+   "date": "2026-12-06",
+   "tipoff_utc": "2026-12-06T14:30:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875516/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875510",
+   "date": "2026-12-06",
+   "tipoff_utc": "2026-12-06T15:30:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875510/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875514",
+   "date": "2026-12-06",
+   "tipoff_utc": "2026-12-06T16:00:00.000Z",
+   "round": 11,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875514/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875525",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T18:00:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875525/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875521",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T19:00:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875521/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875524",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T19:00:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875524/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875526",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T19:00:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875526/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875527",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T19:00:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875527/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875522",
+   "date": "2026-12-09",
+   "tipoff_utc": "2026-12-09T19:30:00.000Z",
+   "round": 12,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875522/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875538",
+   "date": "2026-12-12",
+   "tipoff_utc": "2026-12-12T18:00:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875538/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875531",
+   "date": "2026-12-12",
+   "tipoff_utc": "2026-12-12T19:00:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875531/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875534",
+   "date": "2026-12-12",
+   "tipoff_utc": "2026-12-12T19:00:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875534/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875535",
+   "date": "2026-12-12",
+   "tipoff_utc": "2026-12-12T19:00:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875535/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875529",
+   "date": "2026-12-13",
+   "tipoff_utc": "2026-12-13T14:15:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875529/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875528",
+   "date": "2026-12-13",
+   "tipoff_utc": "2026-12-13T15:00:00.000Z",
+   "round": 13,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875528/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875546",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T14:15:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875546/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875539",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T14:30:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875539/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875540",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T14:30:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875540/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875543",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T14:30:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875543/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875547",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T14:30:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875547/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875542",
+   "date": "2026-12-20",
+   "tipoff_utc": "2026-12-20T15:00:00.000Z",
+   "round": 14,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875542/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875413",
+   "date": "2027-01-03",
+   "tipoff_utc": "2027-01-03T14:30:00.000Z",
+   "round": 3,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875413/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875548",
+   "date": "2027-01-09",
+   "tipoff_utc": "2027-01-09T19:00:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875548/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875552",
+   "date": "2027-01-09",
+   "tipoff_utc": "2027-01-09T19:00:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875552/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875553",
+   "date": "2027-01-09",
+   "tipoff_utc": "2027-01-09T19:00:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875553/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875554",
+   "date": "2027-01-09",
+   "tipoff_utc": "2027-01-09T19:00:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875554/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875555",
+   "date": "2027-01-10",
+   "tipoff_utc": "2027-01-10T14:15:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875555/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875549",
+   "date": "2027-01-10",
+   "tipoff_utc": "2027-01-10T15:00:00.000Z",
+   "round": 15,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875549/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875556",
+   "date": "2027-01-16",
+   "tipoff_utc": "2027-01-16T19:00:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875556/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875559",
+   "date": "2027-01-16",
+   "tipoff_utc": "2027-01-16T19:00:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875559/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875560",
+   "date": "2027-01-16",
+   "tipoff_utc": "2027-01-16T19:00:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875560/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875564",
+   "date": "2027-01-17",
+   "tipoff_utc": "2027-01-17T14:30:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875564/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875557",
+   "date": "2027-01-17",
+   "tipoff_utc": "2027-01-17T15:00:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875557/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875563",
+   "date": "2027-01-17",
+   "tipoff_utc": "2027-01-17T15:15:00.000Z",
+   "round": 16,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875563/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875422",
+   "date": "2027-01-20",
+   "tipoff_utc": "2027-01-20T19:00:00.000Z",
+   "round": 4,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875422/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875567",
+   "date": "2027-01-29",
+   "tipoff_utc": "2027-01-29T19:00:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875567/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875568",
+   "date": "2027-01-30",
+   "tipoff_utc": "2027-01-30T19:00:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875568/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875571",
+   "date": "2027-01-30",
+   "tipoff_utc": "2027-01-30T19:00:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875571/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875573",
+   "date": "2027-01-30",
+   "tipoff_utc": "2027-01-30T19:00:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875573/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875575",
+   "date": "2027-01-31",
+   "tipoff_utc": "2027-01-31T14:15:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875575/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875572",
+   "date": "2027-01-31",
+   "tipoff_utc": "2027-01-31T14:30:00.000Z",
+   "round": 17,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875572/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875594",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T17:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875594/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875576",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T19:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875576/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875582",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T19:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875582/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875593",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T19:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875593/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875595",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T19:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875595/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875597",
+   "date": "2027-02-06",
+   "tipoff_utc": "2027-02-06T19:00:00.000Z",
+   "round": 18,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875597/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875598",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T14:15:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875598/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875599",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T14:30:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875599/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875600",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T14:30:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875600/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875602",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T14:30:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875602/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875603",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T14:30:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875603/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875601",
+   "date": "2027-02-21",
+   "tipoff_utc": "2027-02-21T15:00:00.000Z",
+   "round": 19,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875601/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875607",
+   "date": "2027-02-27",
+   "tipoff_utc": "2027-02-27T19:00:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875607/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875608",
+   "date": "2027-02-27",
+   "tipoff_utc": "2027-02-27T19:00:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875608/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875609",
+   "date": "2027-02-27",
+   "tipoff_utc": "2027-02-27T19:00:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875609/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875610",
+   "date": "2027-02-27",
+   "tipoff_utc": "2027-02-27T19:00:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875610/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875611",
+   "date": "2027-02-27",
+   "tipoff_utc": "2027-02-27T19:00:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875611/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875606",
+   "date": "2027-02-28",
+   "tipoff_utc": "2027-02-28T14:15:00.000Z",
+   "round": 20,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875606/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875612",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875612/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875613",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875613/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875614",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875614/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875615",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875615/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875616",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875616/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875617",
+   "date": "2027-03-14",
+   "tipoff_utc": "2027-03-14T14:15:00.000Z",
+   "round": 21,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875617/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875619",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2941.svg",
+    "name": "Angers",
+    "code": "ANG",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2654.svg",
+    "name": "Bourges",
+    "code": "BOU",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875619/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875620",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2656.svg",
+    "name": "Charleville Mezieres",
+    "code": "CHM",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13378.svg",
+    "name": "Charnay",
+    "code": "CNY",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875620/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875621",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2664.svg",
+    "name": "Villeneuve d'Ascq",
+    "code": "VIL",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13658.svg",
+    "name": "La Tronche Meylan",
+    "code": "LTM",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875621/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875622",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2653.svg",
+    "name": "Basket Landes",
+    "code": "LAN",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13330.svg",
+    "name": "Landerneau",
+    "code": "LDN",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875622/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875623",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/2659.svg",
+    "name": "Lyon",
+    "code": "LYO",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/2658.svg",
+    "name": "Lattes Montpellier",
+    "code": "MTP",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875623/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  },
+  {
+   "id": "2875624",
+   "date": "2027-03-21",
+   "tipoff_utc": "2027-03-21T14:15:00.000Z",
+   "round": 22,
+   "home": {
+    "logo": "https://www.proballers.com/media/team/446.svg",
+    "name": "Toulouse",
+    "code": "TOU",
+    "score": null
+   },
+   "away": {
+    "logo": "https://www.proballers.com/media/team/13659.svg",
+    "name": "Chartres",
+    "code": "CTS",
+    "score": null
+   },
+   "youtube": null,
+   "links": {
+    "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875624/",
+    "lfb": null
+   },
+   "played": false,
+   "perfs": [],
+   "validated": false,
+   "youtube_source": null
+  }
+ ]
+}

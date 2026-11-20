@@ -1,0 +1,93 @@
+name: Mise à jour
+
+on:
+  schedule:
+    # Soirs de LFB (heure de Paris) : mercredi 23 h, samedi 23 h 10, dimanche 17 h 40.
+    # Lancement normal : par le Mac de l'éditeur (agent com.clipspaniers.prefetch-lfb), ponctuel ; ces horaires
+    # GitHub (souvent en retard) restent en secours. Deux horaires UTC par créneau pour l'heure d'été / d'hiver,
+    # le job « gate » ne garde que le bon.
+    - cron: "0 21 * * 3"
+    - cron: "0 22 * * 3"
+    - cron: "10 21 * * 6"
+    - cron: "10 22 * * 6"
+    - cron: "40 15 * * 0"
+    - cron: "40 16 * * 0"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["public/**", "config/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        run: |
+          zone=$(TZ=Europe/Paris date +%Z)
+          run=true
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            case "${{ github.event.schedule }}|$zone" in
+              "0 21 * * 3|CEST"|"0 22 * * 3|CET"|"10 21 * * 6|CEST"|"10 22 * * 6|CET"|"40 15 * * 0|CEST"|"40 16 * * 0|CET") run=true ;;
+              *) run=false ;;
+            esac
+          fi
+          echo "Heure de Paris ($zone), lancement : $run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+  update:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Cache HTTP local : les feuilles de match déjà validées ne sont pas retéléchargées.
+      - uses: actions/cache@v4
+        with:
+          path: .cache/http
+          key: http-${{ github.run_id }}
+          restore-keys: http-
+
+      - name: Calendrier, feuilles de match et vidéos
+        if: github.event_name != 'push'
+        run: node scripts/update.mjs
+
+      - name: Commit des données
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "lfb-performances-bot"
+          git config user.email "lfb-performances-bot@users.noreply.github.com"
+          git add data/games.json data/missing-games.md
+          git diff --cached --quiet || git commit -m "Données du $(TZ=Europe/Paris date +%F)"
+          git push
+
+      - run: node scripts/build-site.mjs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les perfs de La Boulangère Wonderligue</title>
+  <meta name="description" content="Les performances à 20 points ou en double-double de La Boulangère Wonderligue, journée par journée, saison 2026-27.">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="#/">
+      <span class="brand-text"><strong>Les perfs de la Wonderligue</strong><span>20 points ou double-double · saison 2026-27</span></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#/" data-nav="home">Dernière journée</a>
+      <a href="#/joueuses" data-nav="joueuses">Joueuses</a>
+    </nav>
+    <div class="refresh" id="refresh" hidden>
+      <button type="button" class="btn" id="refresh-btn">Actualiser</button>
+      <span class="refresh-info" id="refresh-info" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <p class="loading">Chargement…</p>
+  </main>
+
+  <footer class="site-footer">
+    <p class="muted" id="updated"></p>
+    <p class="muted">Stats : feuilles de match officielles FFBB (FIBA LiveStats), vérifiées avec le score officiel. Calendrier et vidéos : LFB.</p>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

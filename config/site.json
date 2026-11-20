@@ -1,0 +1,13 @@
+{
+  "title": "Les perfs de La Boulangère Wonderligue",
+  "season": "2026-27",
+  "update_workflow_url": "https://github.com/eliottcaillotTaille6/lfb-performances-2026/actions/workflows/update.yml",
+  "youtube_channel": "https://www.youtube.com/@BasketLFBTV",
+  "highlight": {
+    "points": 20
+  },
+  "clipping": {
+    "label": "Clipper",
+    "url": "http://127.0.0.1:8765/"
+  }
+}
