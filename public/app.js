@@ -186,48 +186,53 @@ function cardHTML(g, l) {
 }
 
 // ---------- pages ----------
-const playedDays = () => [...new Set(state.games.filter((g) => Object.values(g.lines ?? {}).some((l) => l.status === 'played')).map((g) => g.date))].sort();
 
-// Accueil : la semaine civile en cours (lundi → dimanche, heure de Paris). Les matchs de la semaine
-// précédente n'y sont pas : boutons « Semaine précédente / suivante » pour naviguer.
-const addDays = (ymd, n) => new Date(noon(ymd).getTime() + n * 86400000).toISOString().slice(0, 10);
-const todayParis = () => new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Paris' });
-const mondayOf = (ymd) => addDays(ymd, -((noon(ymd).getUTCDay() + 6) % 7));
+// Journées de championnat (J1 → J22). Un match reporté garde le numéro de sa journée.
+const allRounds = () => [...new Set(state.games.map((g) => g.round).filter(Boolean))].sort((a, b) => a - b);
+const playedRounds = () => [...new Set(state.games.filter((g) => Object.values(g.lines ?? {}).some((l) => l.status === 'played')).map((g) => g.round))].sort((a, b) => a - b);
+const lastRound = () => playedRounds().at(-1) ?? allRounds()[0];
+const roundOf = (arg) => Number(String(arg ?? '').replace(/^J/i, '')) || null;
+const roundSpan = (games) => {
+  const days = [...new Set(games.map((g) => g.date))].sort();
+  if (!days.length) return '';
+  const f = (d) => dateFR(d, { weekday: 'long', day: 'numeric', month: 'long' });
+  return days.length === 1 ? f(days[0]) : `du ${f(days[0])} au ${f(days.at(-1))}`;
+};
 
-function pageHome(weekStart) {
-  const current = mondayOf(todayParis());
-  const start = weekStart ? mondayOf(weekStart) : current;
-  const end = addDays(start, 6);
-  const days = playedDays();
-  const games = state.games.filter((g) => g.date >= start && g.date <= end);
+// Accueil : la dernière journée jouée ; boutons journée précédente / suivante.
+function pageHome(arg) {
+  const r = roundOf(arg) ?? lastRound();
+  const rounds = allRounds();
+  const games = state.games.filter((g) => g.round === r);
   const lines = games.flatMap((g) => Object.values(g.lines ?? {}).map((l) => ({ g, l })));
   // lignes encadrées d'abord, puis les autres ; dans chaque groupe, par points
   const played = lines.filter((x) => x.l.status === 'played' && x.l.stats).sort((a, b) =>
     isBig(b.l.stats, b.l.player_id).big - isBig(a.l.stats, a.l.player_id).big || b.l.stats.pts - a.l.stats.pts || b.l.stats.reb - a.l.stats.reb);
   const others = lines.filter((x) => x.l.status !== 'played');
-  const prev = days.filter((d) => d < start).at(-1);
-  const next = days.find((d) => d > end);
-  const range = `du lundi ${dateFR(start, { day: 'numeric', month: 'long' })} au dimanche ${dateFR(end, { day: 'numeric', month: 'long', year: 'numeric' })}`;
-  const title = start === current ? 'Cette semaine' : `Semaine du ${dateFR(start, { day: 'numeric', month: 'long' })}`;
-  return `<h1>${esc(title)}</h1>
-    <p class="page-sub">${esc(range)} · ${played.length} ligne${played.length > 1 ? 's' : ''} de stats, ${games.length} match${games.length > 1 ? 's' : ''}</p>
+  const i = rounds.indexOf(r);
+  const prev = rounds[i - 1];
+  const next = rounds[i + 1];
+  const done = games.filter((g) => g.played).length;
+  const href = (x) => (x === lastRound() ? '#/' : `#/journee/J${x}`);
+  return `<h1>Journée ${r}</h1>
+    <p class="page-sub">${esc(roundSpan(games))} · ${done}/${games.length} match${games.length > 1 ? 's' : ''} joué${done > 1 ? 's' : ''} · ${played.length} ligne${played.length > 1 ? 's' : ''} de stats</p>
     <div class="day-nav">
-      ${prev ? `<a class="btn ghost" href="#/semaine/${mondayOf(prev)}">← Semaine précédente</a>` : ''}
-      ${next ? `<a class="btn ghost" href="#/semaine/${mondayOf(next)}">Semaine suivante →</a>` : start < current ? '<a class="btn ghost" href="#/">Cette semaine →</a>' : ''}
-      <a class="btn ghost" href="#/calendrier/${games.at(-1)?.date ?? (prev ?? start)}">Calendrier</a>
+      ${prev ? `<a class="btn ghost" href="${href(prev)}">← J${prev}</a>` : ''}
+      ${next ? `<a class="btn ghost" href="${href(next)}">J${next} →</a>` : ''}
+      <a class="btn ghost" href="#/calendrier/J${r}">Calendrier de la J${r}</a>
     </div>
-    <div class="cards">${played.map(({ g, l }) => cardHTML(g, l)).join('') || `<p class="empty">${start === current ? 'Pas encore de match cette semaine.' : 'Aucun match cette semaine-là.'}</p>`}</div>
-    ${others.length ? `<div class="absents"><h2>N'ont pas joué</h2><ul>${others.map(({ g, l }) => `<li><a href="#/joueuse/${esc(l.player_id)}">${esc(state.byId.get(l.player_id)?.name ?? l.player_id)}</a> (${esc(l.team)}, ${esc(dateShortFR(g.date))} ${perspective(g, l).where} ${esc(teamName(perspective(g, l).them))}) : ${statusText(l)}</li>`).join('')}</ul></div>` : ''}`;
+    <div class="cards">${played.map(({ g, l }) => cardHTML(g, l)).join('') || `<p class="empty">${games.length ? `Aucun match de la J${r} joué pour l'instant${games[0] ? ` (${esc(roundSpan(games))})` : ''}.` : 'Journée inconnue.'}</p>`}</div>
+    ${others.length ? `<div class="absents"><h2>N'ont pas joué</h2><ul>${others.map(({ g, l }) => `<li><a href="#/joueuse/${esc(l.player_id)}">${esc(state.byId.get(l.player_id)?.name ?? l.player_id)}</a> (${esc(l.team)}, ${perspective(g, l).where} ${esc(teamName(perspective(g, l).them))}) : ${statusText(l)}</li>`).join('')}</ul></div>` : ''}`;
 }
 
-// Retour de la fiche joueuse : vers la page d'où l'on vient (semaine, calendrier, tableau), sinon le tableau.
+// Retour de la fiche joueuse : vers la page d'où l'on vient (journée, calendrier, tableau), sinon le tableau.
 let backTo = '#/tableau';
 function backLink() {
   const [, page, arg] = backTo.replace(/^#\/?/, '#/').split('/');
-  const label = page === 'semaine' && arg ? `Semaine du ${dateFR(mondayOf(arg), { day: 'numeric', month: 'long' })}`
-    : page === 'calendrier' ? 'Calendrier'
+  const label = page === 'journee' && arg ? `Journée ${roundOf(arg)}`
+    : page === 'calendrier' ? `Calendrier${arg ? ` de la J${roundOf(arg)}` : ''}`
     : page === 'tableau' ? 'Tableau général'
-    : 'Cette semaine';
+    : `Journée ${lastRound()}`;
   return `<a href="${esc(backTo || '#/')}">← ${esc(label)}</a>`;
 }
 
@@ -373,17 +378,21 @@ $main.addEventListener('change', (e) => {
     render();
     document.querySelector(`[data-filter="${f}"]`)?.focus();
   }
-  if (e.target.id === 'day-picker' && e.target.value) location.hash = `#/calendrier/${e.target.value}`;
+  if (e.target.id === 'round-picker' && e.target.value) location.hash = `#/calendrier/J${e.target.value}`;
 });
 
 // ---------- calendrier ----------
-function pageCalendar(day) {
-  const days = [...new Set(state.games.map((g) => g.date))].sort();
-  const d = day ?? days.at(-1) ?? new Date().toISOString().slice(0, 10);
-  const games = state.games.filter((g) => g.date === d).sort((a, b) => a.tipoff_utc.localeCompare(b.tipoff_utc));
-  const i = days.indexOf(d);
-  const prev = i > 0 ? days[i - 1] : days.filter((x) => x < d).at(-1);
-  const next = i >= 0 ? days[i + 1] : days.find((x) => x > d);
+// Calendrier par journée : tous les matchs de la journée, regroupés par jour. Par défaut, la prochaine journée
+// (celle du prochain match à jouer), sinon la dernière.
+function pageCalendar(arg) {
+  const rounds = allRounds();
+  const upcoming = state.games.filter((g) => !g.played && Date.parse(g.tipoff_utc) > Date.now() - 3 * 3600e3)
+    .sort((a, b) => a.tipoff_utc.localeCompare(b.tipoff_utc))[0];
+  const r = roundOf(arg) ?? upcoming?.round ?? lastRound();
+  const games = state.games.filter((g) => g.round === r).sort((a, b) => a.tipoff_utc.localeCompare(b.tipoff_utc));
+  const i = rounds.indexOf(r);
+  const prev = rounds[i - 1];
+  const next = rounds[i + 1];
   const block = (g) => {
     const lines = Object.values(g.lines ?? {}).sort((a, b) => (b.stats?.pts ?? -1) - (a.stats?.pts ?? -1));
     return `<section class="game-block">
@@ -399,14 +408,17 @@ function pageCalendar(day) {
       ${linksHTML(g)}
     </section>`;
   };
-  return `<h1>Calendrier</h1>
+  const days = [...new Set(games.map((g) => g.date))].sort();
+  const done = games.filter((g) => g.played).length;
+  return `<h1>Calendrier · Journée ${r}</h1>
     <div class="day-nav">
-      ${prev ? `<a class="btn ghost" href="#/calendrier/${prev}" aria-label="Journée précédente">← ${esc(dateShortFR(prev))}</a>` : ''}
-      <label class="filters" style="margin:0"><span class="sr">Date</span><input type="date" id="day-picker" class="active" value="${d}" min="2026-09-01" max="2027-04-30"></label>
-      ${next ? `<a class="btn ghost" href="#/calendrier/${next}" aria-label="Journée suivante">${esc(dateShortFR(next))} →</a>` : ''}
+      ${prev ? `<a class="btn ghost" href="#/calendrier/J${prev}" aria-label="Journée précédente">← J${prev}</a>` : ''}
+      <label class="filters" style="margin:0"><span class="sr">Journée</span><select id="round-picker" class="active">${rounds.map((x) => `<option value="${x}"${x === r ? ' selected' : ''}>Journée ${x}</option>`).join('')}</select></label>
+      ${next ? `<a class="btn ghost" href="#/calendrier/J${next}" aria-label="Journée suivante">J${next} →</a>` : ''}
+      ${done ? `<a class="btn ghost" href="${r === lastRound() ? '#/' : `#/journee/J${r}`}">Les stats de la J${r}</a>` : ''}
     </div>
-    <p class="page-sub">${esc(dateFR(d))} · ${games.length} match${games.length > 1 ? 's' : ''}</p>
-    ${games.map(block).join('') || '<p class="empty">Aucun match ce jour-là.</p>'}`;
+    <p class="page-sub">${esc(roundSpan(games))} · ${games.length} match${games.length > 1 ? 's' : ''}, ${done} joué${done > 1 ? 's' : ''}</p>
+    ${days.map((d) => `<h2>${esc(dateFR(d, { weekday: 'long', day: 'numeric', month: 'long' }))}</h2>${games.filter((g) => g.date === d).map(block).join('')}`).join('') || '<p class="empty">Aucun match.</p>'}`;
 }
 
 // ---------- infobulle du graphique ----------
@@ -437,7 +449,8 @@ function render() {
   if (page === 'joueuse') { html = pagePlayer(decodeURIComponent(arg ?? '')); nav = ''; }
   else if (page === 'tableau') { html = pageTable(); nav = 'tableau'; }
   else if (page === 'calendrier') { html = pageCalendar(arg); nav = 'calendrier'; }
-  else if (page === 'semaine') html = pageHome(arg);
+  else if (page === 'semaine') html = pageHome();   // anciennes adresses par semaine
+  else if (page === 'journee') html = pageHome(arg);
   else html = pageHome();
   $main.innerHTML = html;
   document.querySelectorAll('[data-nav]').forEach((a) => (a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));

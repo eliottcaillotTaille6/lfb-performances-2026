@@ -36,11 +36,14 @@ YouTube LFB TV (@BasketLFBTV) ──────────┘
 
 ## Pages
 
-- **Cette semaine** (accueil) : la semaine civile en cours (lundi → dimanche, heure de Paris). Cartes des lignes
-  encadrées d'abord, puis les autres, chaque groupe par points ; liste des joueuses qui n'ont pas joué. Boutons semaine
-  précédente / suivante.
+Tout est organisé par **journée de championnat** (J1 → J22 ; un match reporté reste dans sa journée).
+
+- **Dernière journée** (accueil) : la dernière journée jouée. Cartes des lignes encadrées d'abord, puis les autres,
+  chaque groupe par points ; liste des joueuses qui n'ont pas joué. Boutons journée précédente / suivante
+  (adresses `#/journee/J8`).
 - **Tableau** : toutes les joueuses qui ont joué, moyennes triables, filtres club et minutes par match.
-- **Calendrier** : jour par jour, matchs à venir compris (heure de Paris, liens), avec un sélecteur de date.
+- **Calendrier** : une journée à la fois, matchs regroupés par jour, à venir compris (heure de Paris, liens) ; par
+  défaut la prochaine journée à jouer ; sélecteur de journée (adresses `#/calendrier/J9`).
 - **Fiche joueuse** : photo, club, numéro, moyennes, graphique des points, game log avec les liens de chaque match.
 
 ## Mode éditeur, Actualiser et Clipper
