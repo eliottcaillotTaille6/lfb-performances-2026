@@ -1,0 +1,1696 @@
+[
+ {
+  "id": "ainhoa-risacher",
+  "name": "Ainhoa Risacher",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "10",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/ec4ee6b9c3ebd039e7853fc746dd4fd8T1.jpg"
+ },
+ {
+  "id": "alberte-rimdal",
+  "name": "Alberte Rimdal",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/268126a01629877eafc541305b16357dT1.jpg"
+ },
+ {
+  "id": "aleksa-gulbe",
+  "name": "Aleksa Gulbe",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "23",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/09aee8410ea1ee0c44c79fd59d3f7da4T1.jpg"
+ },
+ {
+  "id": "alia-mbock-mbock",
+  "name": "Alia Mbock Mbock",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/95d25be972bb042550258a2d54123f29T1.jpg"
+ },
+ {
+  "id": "alix-duchet",
+  "name": "Alix Duchet",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "39",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b6030340fdc4a9a7d8cf3f913ef32b9dT1.jpg"
+ },
+ {
+  "id": "aminata-diagne",
+  "name": "Aminata Diagne",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "14",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bdc6e3ef061458ca52944c65c0e4234fT1.jpg"
+ },
+ {
+  "id": "amourelle-victoria-cetout-fernandes-da-silva",
+  "name": "Amourelle Victoria- Cetout-Fernandes Da Silva",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "9"
+ },
+ {
+  "id": "ana-maria-filip",
+  "name": "Ana Maria Filip",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "9",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/98a330fd313a1c353055b97f1cced54fT1.jpg"
+ },
+ {
+  "id": "anaelle-dutat",
+  "name": "Anaelle Dutat",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "15",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bcdcfdf1b01f693e596f8dfe5af9c968T1.jpg"
+ },
+ {
+  "id": "angie-nkodia",
+  "name": "Angie Nkodia",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/72975b821aae596e389449f969a85d00T1.jpg"
+ },
+ {
+  "id": "anna-mane",
+  "name": "Anna Mane",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "68"
+ },
+ {
+  "id": "anna-ngo-ndjock",
+  "name": "Anna Ngo Ndjock",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "0",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/87bb98a78da2f26213290f8925852e81T1.jpg",
+  "position": "2-3"
+ },
+ {
+  "id": "ashunae-durant",
+  "name": "Ashunae Durant",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "1",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8b75697ed1d226308755d2900fba73fbT1.jpg"
+ },
+ {
+  "id": "asianae-johnson",
+  "name": "Asianae Johnson",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "11",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7d8855e2ecef577a2dec6d77587b57dfT1.jpg"
+ },
+ {
+  "id": "assitan-kone",
+  "name": "Assitan Kone",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "26",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fd3091340c7f69488941af1e7bf1efe0T1.jpg"
+ },
+ {
+  "id": "awa-trasi",
+  "name": "Awa Trasi",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "32",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/665f7fe64ceb41c402e18a993f4a6a27T1.jpg"
+ },
+ {
+  "id": "axelle-raggiri",
+  "name": "Axelle Raggiri",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "20",
+  "position": "5"
+ },
+ {
+  "id": "becky-massey",
+  "name": "Becky Massey",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b337db338194a9aafcda569ca6e98a47T1.jpg"
+ },
+ {
+  "id": "bethy-mununga",
+  "name": "Bethy Mununga",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "2",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/de0d04a9e64506fc5724566e9055356eT1.jpg"
+ },
+ {
+  "id": "binta-drame",
+  "name": "Binta Drame",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "32",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/50fef685dc017ba4f83f1e79f7ce1898T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "bria-hartley",
+  "name": "Bria Hartley",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "14",
+  "photo": "http://img.wh.sportingpulseinternational.com/7a81446e59dd3de4f66f39d73c57444cT1.jpg"
+ },
+ {
+  "id": "camille-droguet",
+  "name": "Camille Droguet",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/5404bb87caf4c845d6cbdf970a4aeaabT1.jpg",
+  "position": "2-3"
+ },
+ {
+  "id": "camille-sevaux",
+  "name": "Camille Sevaux",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "70",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/98c7f52672cd55e3f8b4c9c887f868bfT1.jpg"
+ },
+ {
+  "id": "carla-cherry",
+  "name": "Carla Cherry",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "6",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d2c0f54ed8f153650587dc22fcc7c8fdT1.jpg"
+ },
+ {
+  "id": "caroline-heriaud",
+  "name": "Caroline Heriaud",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "6",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/19354626e3ce83570b94ba77fb4612deT1.jpg"
+ },
+ {
+  "id": "celia-cardenal",
+  "name": "Célia Cardenal",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/f63099079e88ad13cc36966f06501f22T1.jpg"
+ },
+ {
+  "id": "celine-hortense-gomis",
+  "name": "Céline Hortense Gomis",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "19",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/487fd05ac2adc5be72c0d6c8304c7871T1.jpg"
+ },
+ {
+  "id": "chloe-diawara-darnis",
+  "name": "Chloé- Diawara-Darnis",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "9"
+ },
+ {
+  "id": "claire-dalstra",
+  "name": "Claire Dalstra",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "15",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/9051026b8b16d74b823b580922b26932T1.jpg"
+ },
+ {
+  "id": "clarisse-legrand",
+  "name": "Clarisse Legrand",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/73c3237f60cf69e2defc19c0f252f322T1.jpg"
+ },
+ {
+  "id": "coline-franchelin",
+  "name": "Coline Franchelin",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "2",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/53f2323dc5187ec648778e9bb04b42aaT1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "coralie-chabrier",
+  "name": "Coralie Chabrier",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/68246200f5bade547010b7a4c843c327T1.jpg"
+ },
+ {
+  "id": "dara-mabrey",
+  "name": "Dara Mabrey",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "10",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/2e9f19b95ed04928a3e022e956b504b5T1.jpg"
+ },
+ {
+  "id": "dayshanette-harris",
+  "name": "Dayshanette Harris",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "1",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b23ca5f81e320fdd5693385867dc40e5T1.jpg"
+ },
+ {
+  "id": "dominique-toussaint",
+  "name": "Dominique Toussaint",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "22",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/025374a3ba76b2a92da7f72a2cdbcf2bT1.jpg"
+ },
+ {
+  "id": "elena-zemoura",
+  "name": "Éléna Zemoura",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "2",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c718d9919c9ef96144e5bd930c09f3e5T1.jpg"
+ },
+ {
+  "id": "elise-marie",
+  "name": "Elise Marie",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "21",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a3aa6d94c5f6a8b9a2bdfcc141d4ab01T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "elodie-naigre",
+  "name": "Elodie Naigre",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d54305553dd0461211bcee359fe9fc04T1.jpg"
+ },
+ {
+  "id": "elsie-nelhomme",
+  "name": "Elsie Nelhomme",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/37cf3591b146d0c3d24a0f255391b517T1.jpg"
+ },
+ {
+  "id": "emma-cariou",
+  "name": "Emma Cariou",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/aa6f95345cbfc5fc4fca9a30dff790b4T1.jpg"
+ },
+ {
+  "id": "emma-dechanoz",
+  "name": "Emma Dechanoz",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/deec42a0d7facfc9b2f1ddc7ea32a283T1.jpg"
+ },
+ {
+  "id": "emma-peytour",
+  "name": "Emma Peytour",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "10",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/723643aed4d87c15918b876f81972a02T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "emmy-costes",
+  "name": "Emmy Costes",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "3"
+ },
+ {
+  "id": "eva-bach",
+  "name": "Eva Bach",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fca5fec3361985f02ba450d2e421f293T1.jpg"
+ },
+ {
+  "id": "eve-de-christophie-mahoutou",
+  "name": "Eve De Christophie Mahoutou",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "26",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3b266c5363ca92362b154646214ad3faT1.jpg",
+  "position": "4-3"
+ },
+ {
+  "id": "garance-rabot",
+  "name": "Garance Rabot",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "26",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/2d54770deb550d6e8ab947550c703915T1.jpg"
+ },
+ {
+  "id": "harmoni-turner",
+  "name": "Harmoni Turner",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "14",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/cf47f21d34cc3af3d42f154c56131be5T1.jpg"
+ },
+ {
+  "id": "hawa-komara",
+  "name": "Hawa Komara",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "22",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/404e250f347400e7b350f46bcfeae256T1.jpg"
+ },
+ {
+  "id": "helene-jakovljevic",
+  "name": "Helene Jakovljevic",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/04427415f7aa8523fcc58d65d94e7458T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "ines-pitarch-granel",
+  "name": "Inès Pitarch Granel",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "26",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/23666e9f8224b30b50e662d304bb3bcaT1.jpg"
+ },
+ {
+  "id": "isabelle-strunc",
+  "name": "Isabelle Strunc",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/4e2436641e1ab78dc0014093b06bf609T1.jpg",
+  "position": "2"
+ },
+ {
+  "id": "janice-albert",
+  "name": "Janice Albert",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "12",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b72571a110ea92ef3e0ec2fed2dee29cT1.jpg"
+ },
+ {
+  "id": "jasmine-thomas",
+  "name": "Jasmine Thomas",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "00",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b89f89859fc5db6180f18ffea4eef694T1.jpg"
+ },
+ {
+  "id": "javyn-danae-nicholson",
+  "name": "Javyn-Danae Nicholson",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "35",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/6f64e379600d8eb76e2103d85f60432cT1.jpg"
+ },
+ {
+  "id": "jessica-blanche-mavambou",
+  "name": "Jessica Blanche Mavambou",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/0b04e32a1a0bb55900f22ec23cff9dd2T1.jpg",
+  "position": "4"
+ },
+ {
+  "id": "jessica-lindstrom",
+  "name": "Jessica Lindstrom",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "21",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/4bc84622ce615721b3dee070dea67b72T1.jpg"
+ },
+ {
+  "id": "joana-konate",
+  "name": "Joana Konate",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "31",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/811c9a383dad54206d3397046fd4d8baT1.jpg"
+ },
+ {
+  "id": "julia-marthi-toffolon",
+  "name": "Julia Marthi-Toffolon",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "9"
+ },
+ {
+  "id": "julie-pospisilova",
+  "name": "Julie Pospisilova",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3ab5cb09c54b7bb96aee7c6cb87a44b4T1.jpg",
+  "position": "3"
+ },
+ {
+  "id": "kiara-nardozzi",
+  "name": "Kiara Nardozzi",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "15"
+ },
+ {
+  "id": "klaudia-papp",
+  "name": "Klaudia Papp",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "1",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a1ea5cd8508f6301c703d228128cfdb4T1.jpg"
+ },
+ {
+  "id": "koi-love",
+  "name": "Koi Love",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "0",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a9802926fec61551d063948ee3268189T1.jpg",
+  "position": "3"
+ },
+ {
+  "id": "kylee-shook",
+  "name": "Kylee Shook",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "24",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/88470908a861de94f60b08f342d78e14T1.jpg"
+ },
+ {
+  "id": "laetitia-guapo",
+  "name": "Laetitia Guapo",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "12",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/ffeadd30cb332be3188c3d1e410e2bd3T1.jpg",
+  "position": "3"
+ },
+ {
+  "id": "lamia-h-saina",
+  "name": "Lamia H'saina",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "11"
+ },
+ {
+  "id": "laura-evrard",
+  "name": "Laura Evrard",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "11",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/9f9336c5c1a60b3254847fbd81bc8cedT1.jpg"
+ },
+ {
+  "id": "laura-mendez-camps",
+  "name": "Laura Mendez Camps",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bb3c6def74230b85fd2303cb12b9c573T1.jpg"
+ },
+ {
+  "id": "laura-ziegler",
+  "name": "Laura Ziegler",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7ad393cebcb20557c7740fc4a95aba22T1.jpg"
+ },
+ {
+  "id": "laura-zolper",
+  "name": "Laura Zolper",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "4",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d329aa421b03677bca1a9123208074b7T1.jpg",
+  "position": "1-2"
+ },
+ {
+  "id": "lea-cortana",
+  "name": "Léa Cortana",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "3"
+ },
+ {
+  "id": "lea-fontanelle",
+  "name": "Léa Fontanelle",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "87",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/901f82aa6a85e539f7d63eef9d24db51T1.jpg"
+ },
+ {
+  "id": "leane-tardy",
+  "name": "Léane Tardy",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a5a90b22c344861aaeb92fa38498c1e5T1.jpg"
+ },
+ {
+  "id": "leck-olivia-yale",
+  "name": "Leck-Olivia Yale",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "30",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c36bca679af97cdf611a6b05022468b2T1.jpg",
+  "position": "2-3"
+ },
+ {
+  "id": "liliana-banaszak",
+  "name": "Liliana Banaszak",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "22",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/660b9092ca3bbceda9fadf93666c4171T1.jpg",
+  "position": "4"
+ },
+ {
+  "id": "lina-sardi-lakedja",
+  "name": "Lina Sardi Lakedja",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "5"
+ },
+ {
+  "id": "lola-dely",
+  "name": "Lola Dely",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/650cdf4fd215cca43e9519d533150e9eT1.jpg"
+ },
+ {
+  "id": "lou-anne-laisney",
+  "name": "Lou-Anne Laisney",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "13",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fb317c984777d3d9e71c49f62627eeb3T1.jpg"
+ },
+ {
+  "id": "louise-bussiere",
+  "name": "Louise Bussiere",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "28",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/1ccb9f84bd8d8f4a8df6e0049990f468T1.jpg"
+ },
+ {
+  "id": "lucie-darre",
+  "name": "Lucie Darre",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "31"
+ },
+ {
+  "id": "maelie-butez",
+  "name": "Maelie Butez",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "18",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/6cd995446cf1be759f2065345ba7d0b4T1.jpg"
+ },
+ {
+  "id": "maelynn-elmira",
+  "name": "Maelynn Elmira",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3b29e23ae9b049ee3bd70f38bd5f2374T1.jpg"
+ },
+ {
+  "id": "maelys-dupont",
+  "name": "Maëlys Dupont",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "8"
+ },
+ {
+  "id": "maeva-djaldi-tabdi",
+  "name": "Maëva Djaldi-Tabdi",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "3",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/6cffd3dc780ab038a9da500a9daf3a2bT1.jpg"
+ },
+ {
+  "id": "maewenn-poilve",
+  "name": "Maëwenn Poilvé",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "1",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/f84de9816e7e72ddd99500389751af46T1.jpg"
+ },
+ {
+  "id": "maia-hirsch",
+  "name": "Maia Hirsch",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "33",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/44ad85d710ea8e75b882b4982ad2e097T1.jpg",
+  "position": "4"
+ },
+ {
+  "id": "manaelle-yerbe",
+  "name": "Manaëlle Yerbé",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "18",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/9dc275ace13ae0e5d773dec5d6603d6fT1.jpg"
+ },
+ {
+  "id": "manoe-cisse",
+  "name": "Manoe Cisse",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "20",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/1df78dabdb2616149413a586eb608166T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "manon-greusard",
+  "name": "Manon Greusard",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "20"
+ },
+ {
+  "id": "margaux-raimbault",
+  "name": "Margaux Raimbault",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "30",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/0b61a256b2de6635a986f127d083d6f6T1.jpg"
+ },
+ {
+  "id": "margot-de-freitas",
+  "name": "Margot De Freitas",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "45",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/317f633b9d34ecc3ce4eb41b6bea9740T1.jpg",
+  "position": "5"
+ },
+ {
+  "id": "maria-steen-jespersen",
+  "name": "Maria Steen Jespersen",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "11",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/0f7e529991f69b8dde81d740ac62f4c0T1.jpg"
+ },
+ {
+  "id": "mariama-daramy",
+  "name": "Mariama Daramy",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "9",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/068b7b076b145c14574693777ab46cf5T1.jpg",
+  "position": "2-3"
+ },
+ {
+  "id": "mariana-muadi-bulabula",
+  "name": "Mariana Muadi Bulabula",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "12",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/bf949e9cb80ba80951251c6b33e88919T1.jpg"
+ },
+ {
+  "id": "marie-eve-paget",
+  "name": "Marie Eve Paget",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "74",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/17ee56dbafdeb2265b76cc0267216c48T1.jpg"
+ },
+ {
+  "id": "marie-michelle-milapie",
+  "name": "Marie Michelle Milapie",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "13",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3ae5c4f5d13dc1af5ff816a425d00dbfT1.jpg"
+ },
+ {
+  "id": "marie-pardon",
+  "name": "Marie Pardon",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/04ea10b1c740d9fedf613a547c2cff23T1.jpg"
+ },
+ {
+  "id": "marie-paule-dally",
+  "name": "Marie Paule Dally",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "2",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/ae9b1036809169c38c9fe0df2222f980T1.jpg"
+ },
+ {
+  "id": "maroussia-droguet",
+  "name": "Maroussia Droguet",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "20",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8e810f2f24bbfd61b5784719f0958e96T1.jpg",
+  "position": "2"
+ },
+ {
+  "id": "marta-hermida-herraez",
+  "name": "Marta Hermida Herraez",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "20",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/5b5b605d809753ac5a8a2137b314eef7T1.jpg"
+ },
+ {
+  "id": "maryama-m-baye",
+  "name": "Maryama M'baye",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "14"
+ },
+ {
+  "id": "masseny-kaba",
+  "name": "Masseny Kaba",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a3cf875412d0587404c2f9fede7d8d70T1.jpg"
+ },
+ {
+  "id": "mathilde-domenger",
+  "name": "Mathilde Domenger",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "8",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8aa10e8077925be55886b6b9ce1ad7c4T1.jpg"
+ },
+ {
+  "id": "mathilde-selle",
+  "name": "Mathilde Selle",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "24",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/eb35a3f978f6cbb3be68f35d71dc9540T1.jpg"
+ },
+ {
+  "id": "mckenzie-forbes",
+  "name": "Mckenzie Forbes",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/8347ea85baf1f8c29aed11708fd3aec5T1.jpg"
+ },
+ {
+  "id": "merveille-lokoka",
+  "name": "Merveille Lokoka",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "9",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/43ad25a4598d4bbe2939cc4b2bc17655T1.jpg"
+ },
+ {
+  "id": "molly-kaiser",
+  "name": "Molly Kaiser",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/dedb4d8582c7d6cc08e8b2349430fbe0T1.jpg"
+ },
+ {
+  "id": "morgane-armant",
+  "name": "Morgane Armant",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "25",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/6c63a352e5e1121edf1f5ae3606f08d9T1.jpg",
+  "position": "5-4"
+ },
+ {
+  "id": "mousdandy-djaldi-tabdi",
+  "name": "Mousdandy Djaldi-Tabdi",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "36",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/0954ecbdedfa6a4a46b71d4624604302T1.jpg"
+ },
+ {
+  "id": "murjanatu-musa",
+  "name": "Murjanatu Musa",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "11",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d7f18e206907ef886365bfacd27304e0T1.jpg"
+ },
+ {
+  "id": "n-deye-maye-toure",
+  "name": "N'deye Maye Touré",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "21",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c4af998719863e97273af1b2eb5a4a9eT1.jpg"
+ },
+ {
+  "id": "naelle-boudhil",
+  "name": "Naëlle Boudhil",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "26",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/f4b26b212965b37d854e831b6da562edT1.jpg"
+ },
+ {
+  "id": "naema-kouadio",
+  "name": "Naëma Kouadio",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/16d330a2c53bcf5b26e2d40136637c95T1.jpg"
+ },
+ {
+  "id": "naomi-mbandu",
+  "name": "Naomi Mbandu",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "68",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/078116bc5bf2930ae0353fe1dc5c412bT1.jpg"
+ },
+ {
+  "id": "nathalie-desset",
+  "name": "Nathalie Desset",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "21",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/77dc0ba7047e5652b6d807dc22171afbT1.jpg"
+ },
+ {
+  "id": "ndjakalenga-mireille-mwenentamda-evans",
+  "name": "Ndjakalenga Mireille Mwenentamda-Evans",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "15"
+ },
+ {
+  "id": "nina-guilbaud",
+  "name": "Nina Guilbaud",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "12"
+ },
+ {
+  "id": "noemie-brochant",
+  "name": "Noémie Brochant",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "1",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e6849b6f1ee797fb16c5ca32280c4423T1.jpg",
+  "position": "2"
+ },
+ {
+  "id": "oumou-sallymata-diarisso",
+  "name": "Oumou Sallymata Diarisso",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "76",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fb545a06ee1f2a38d8b9aae8b8765205T1.jpg",
+  "position": "5"
+ },
+ {
+  "id": "penda-diagne",
+  "name": "Penda Diagne",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "12",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7a27b6031aca829af5e40079b30c798fT1.jpg"
+ },
+ {
+  "id": "racky-camara",
+  "name": "Racky Camara",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "13",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/150518a9868e29ea40ede0b9216af160T1.jpg"
+ },
+ {
+  "id": "rayana-ben-ammar",
+  "name": "Rayana Ben Ammar",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "21"
+ },
+ {
+  "id": "rokia-bamba",
+  "name": "Rokia Bamba",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "19"
+ },
+ {
+  "id": "romane-bernies",
+  "name": "Romane Bernies",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "47",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7d0debf155c0f20028b908c01119c8c0T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "samantha-breen",
+  "name": "Samantha Breen",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "34",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/241eb3c8352952aaf0bbb14241ec7dd3T1.jpg",
+  "position": "4"
+ },
+ {
+  "id": "samantha-peytour",
+  "name": "Samantha Peytour",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "77",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/845b5e37a3a20f8349a0e84198f0f324T1.jpg"
+ },
+ {
+  "id": "sara-chevaugeon",
+  "name": "Sara Chevaugeon",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "10",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/db569eced5909dc818c926810ae0b904T1.jpg",
+  "position": "2"
+ },
+ {
+  "id": "sara-majstorovic",
+  "name": "Sara Majstorovic",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "21"
+ },
+ {
+  "id": "sarah-cisse",
+  "name": "Sarah Cisse",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "19",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e2aa4823cda34f49d2b56582989537e1T1.jpg",
+  "position": "5"
+ },
+ {
+  "id": "shaina-pellington",
+  "name": "Shaina Pellington",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "1"
+ },
+ {
+  "id": "shakayla-nicole-thomas",
+  "name": "Shakayla Nicole Thomas",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "20",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/c57859f9d87b5e9449cea622be6e637eT1.jpg"
+ },
+ {
+  "id": "shinesse-kourouma",
+  "name": "Shinesse Kourouma",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "37",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3d7dc95e06651c70e6365f5db9d3d554T1.jpg"
+ },
+ {
+  "id": "sixtine-macquet",
+  "name": "Sixtine Macquet",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "13",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/1f51eec6aacd998743104bdf6cd32326T1.jpg",
+  "position": "5"
+ },
+ {
+  "id": "sophia-elenga",
+  "name": "Sophia Elenga",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "6",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e46966b1eb2efbefa2fc6a481c05aa74T1.jpg"
+ },
+ {
+  "id": "stella-colas",
+  "name": "Stella Colas",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "3",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/7ad8fe27a10cd018469e99f399c3dcd9T1.jpg"
+ },
+ {
+  "id": "stella-johnson",
+  "name": "Stella Johnson",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "7",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/75ee6d0656166ce6c6bda056cbe1e8c4T1.jpg",
+  "position": "1-2"
+ },
+ {
+  "id": "stephanie-emma-kostowicz",
+  "name": "Stéphanie Emma Kostowicz",
+  "clubs": [
+   "Villeneuve d'Ascq"
+  ],
+  "active": true,
+  "club": "Villeneuve d'Ascq",
+  "number": "33",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/dda7be7145b29fc966a5fb593e51426fT1.jpg"
+ },
+ {
+  "id": "susannah-rafiu",
+  "name": "Susannah Rafiu",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "0",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a6cb4f5089d4197c7ca9208b7fe2e254T1.jpg"
+ },
+ {
+  "id": "sydney-tamara-nicole-wallace",
+  "name": "Sydney Tamara Nicole Wallace",
+  "clubs": [
+   "Bourges"
+  ],
+  "active": true,
+  "club": "Bourges",
+  "number": "23",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/61f2c44ebe204b819d8b456796fae02aT1.jpg"
+ },
+ {
+  "id": "taya-reimer",
+  "name": "Taya Reimer",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "32",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/2e88d2300cc2d4c9d05c43280a5bec43T1.jpg"
+ },
+ {
+  "id": "taylor-janee-murray",
+  "name": "Taylor Janee Murray",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "11"
+ },
+ {
+  "id": "taylor-murray",
+  "name": "Taylor Murray",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "14"
+ },
+ {
+  "id": "taylor-valladay",
+  "name": "Taylor Valladay",
+  "clubs": [
+   "Landerneau"
+  ],
+  "active": true,
+  "club": "Landerneau",
+  "number": "2"
+ },
+ {
+  "id": "tenin-magassa",
+  "name": "Tenin Magassa",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "6",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/563306851e6bf916fc202ef393e78618T1.jpg",
+  "position": "5"
+ },
+ {
+  "id": "teyanna-yombo-gboto",
+  "name": "Teyanna Yombo-Gboto",
+  "clubs": [
+   "Lyon"
+  ],
+  "active": true,
+  "club": "Lyon",
+  "number": "19"
+ },
+ {
+  "id": "thelma-leray",
+  "name": "Thelma Leray",
+  "clubs": [
+   "Toulouse"
+  ],
+  "active": true,
+  "club": "Toulouse",
+  "number": "5",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/2673af7f47267137ff66791866ba4f43T1.jpg"
+ },
+ {
+  "id": "tiffany-clarke",
+  "name": "Tiffany Clarke",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "34",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/642300284ded0daac477b1824100d801T1.jpg",
+  "position": "4-5"
+ },
+ {
+  "id": "tilise-boisseron",
+  "name": "Tilise Boisseron",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "11",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/4ae397e940844939cce24a1a20962fc7T1.jpg",
+  "position": "1"
+ },
+ {
+  "id": "trinity-baptiste",
+  "name": "Trinity Baptiste",
+  "clubs": [
+   "Angers"
+  ],
+  "active": true,
+  "club": "Angers",
+  "number": "14",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/64bd9d7895cf631526cbc3f3184ebe57T1.jpg"
+ },
+ {
+  "id": "trinity-san-antonio",
+  "name": "Trinity San Antonio",
+  "clubs": [
+   "Basket Landes"
+  ],
+  "active": true,
+  "club": "Basket Landes",
+  "number": "3",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/e67b15ccf747ae024b9b9676fccfa289T1.jpg"
+ },
+ {
+  "id": "vaciana-gomis",
+  "name": "Vaciana Gomis",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "75",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/1b2498bdd54c9bdcdb27ee1ea7f1498dT1.jpg"
+ },
+ {
+  "id": "wallen-rhennam",
+  "name": "Wallen Rhennam",
+  "clubs": [
+   "Charleville Mezieres"
+  ],
+  "active": true,
+  "club": "Charleville Mezieres",
+  "number": "10",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/3f9c334ffb7dc02564251274ef7990feT1.jpg",
+  "position": "1-2"
+ },
+ {
+  "id": "yvanna-enjolvy",
+  "name": "Yvanna Enjolvy",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "2",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/1b5ac346bee9758dd6f36a35f70f6c9cT1.jpg"
+ },
+ {
+  "id": "zainabe-diallo",
+  "name": "Zainabe Diallo",
+  "clubs": [
+   "Lattes Montpellier"
+  ],
+  "active": true,
+  "club": "Lattes Montpellier",
+  "number": "32",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/76ed6406d958d1dda45f1d173b577eaeT1.jpg"
+ }
+]

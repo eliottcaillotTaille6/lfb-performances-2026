@@ -1,17 +1,35 @@
-// Les perfs de La Boulangère Wonderligue — site statique, sans framework.
-// Données : data/games.json (calendrier LFB + performances tirées des feuilles de match FIBA LiveStats), config/site.json.
+// La Boulangère Wonderligue (LFB) — toutes les joueuses, match par match. Site statique, sans framework.
+// Données : data/games.json, data/players.json, config/site.json.
 
 const $main = document.getElementById('main');
-const state = { games: [], config: {}, updated: null, players: new Map() };
+const $tip = document.getElementById('tooltip');
+
+const state = { players: [], byId: new Map(), games: [], config: {}, updated: null };
 
 // ---------- utilitaires ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const fmt1 = (n) => (Number.isFinite(n) ? n.toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '–');
+const pct = (m, a) => (a ? `${((100 * m) / a).toLocaleString('fr-FR', { maximumFractionDigits: 1 })} %` : '–');
 const noon = (ymd) => new Date(`${ymd}T12:00:00Z`);
-const dateFR = (ymd, opts = { weekday: 'long', day: 'numeric', month: 'long' }) =>
-  noon(ymd).toLocaleDateString('fr-FR', { ...opts, timeZone: 'UTC' }).replace(/(^|\s)1 /, '$11er ');
+
+const dateFR = (ymd, opts = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) =>
+  noon(ymd).toLocaleDateString('fr-FR', { ...opts, timeZone: 'UTC' }).replace(/(^|\s)1 /, '$11er '); // « 1er novembre »
+const dateShortFR = (ymd) => noon(ymd).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: 'UTC' });
 const timeParis = (utc) =>
   new Date(utc).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' }).replace(':', ' h ');
-const fmt1 = (n) => n.toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const kickoff = (g) => (g.tipoff_utc ? `${timeParis(g.tipoff_utc)} (Paris)` : '');
+const age = (dob) => (dob ? Math.floor((Date.now() - Date.parse(dob)) / (365.25 * 86400000)) : null);
+
+// Postes FIBA en français
+const POSTES = {
+  'Point Guard': 'Meneuse', 'Shooting Guard': 'Arrière', Guard: 'Arrière', 'Small Forward': 'Ailière',
+  Forward: 'Ailière', 'Power Forward': 'Ailière forte', Center: 'Pivot',
+  PG: 'Meneuse', SG: 'Arrière', G: 'Arrière', SF: 'Ailière', F: 'Ailière', PF: 'Ailière forte', C: 'Pivot',
+};
+const poste = (p) => POSTES[p] ?? p ?? '';
+const compName = () => 'La Boulangère Wonderligue';
+const teamName = (t) => t.name; // nom d'usage du club, tel que l'écrit le calendrier LFB
+const compBadge = (g) => (g.round ? `<span class="badge comp" title="Journée ${g.round}">J${g.round}</span>` : '');
 
 // Mode éditeur : activé une fois par appareil en ouvrant le site avec ?admin (désactivé avec ?admin=0).
 const params = new URLSearchParams(location.search);
@@ -25,41 +43,107 @@ const ADMIN = (() => {
 })();
 
 // ---------- liens ----------
-// Bouton « Clipper » (mode éditeur) : outil de clipping du Mac avec le match complet (chaîne LFB TV), la feuille de
-// match FIBA LiveStats (play-by-play), la joueuse (nom, numéro, équipe : 1 = à domicile) et le préréglage de zones
-// « lfb » (habillage de la Wonderligue) : l'outil pose les zones et lance l'analyse.
-function clipLinks(g, p) {
-  const clip = state.config.clipping;
-  if (!ADMIN || !clip?.url || !g.youtube) return [];
-  const q = new URLSearchParams({
-    video: g.youtube,
-    pbp: g.links.livestats,
-    name: p.name,
-    number: p.jersey,
-    team: p.side === 'home' ? '1' : '2',
-    zones: 'lfb',
-    t: Date.now().toString(36),
-  });
-  const out = [{ label: clip.label ?? 'Clipper', url: `${clip.url}?${q}`, title: 'Match complet : ouvrir dans l\'outil de clipping (vidéo, feuille de match FIBA LiveStats, joueuse et zones préremplies, analyse lancée)' }];
-  if (p.stats.ast >= 10) {
-    q.set('mode', 'passes');
-    out.push({ label: `${clip.label ?? 'Clipper'} passes`, url: `${clip.url}?${q}`, title: `${p.stats.ast} passes décisives : montage des paniers sur ses passes` });
-  }
-  return out;
+function youtubeLinks(g) {
+  const yt = state.config.youtube ?? {};
+  // Un seul bouton : le match complet trouvé par le pipeline, sinon le résumé, sinon la recherche sur la chaîne officielle.
+  const v = g.youtube?.url ? g.youtube : g.highlights?.url ? g.highlights : null;
+  if (v) return [{ label: yt.label ?? 'YouTube', url: v.url, title: v.title }];
+  const query = `${g.home.name} - ${g.away.name}`;
+  return [{ label: yt.label ?? 'YouTube', url: `${yt.search_url ?? 'https://www.youtube.com/results?search_query='}${encodeURIComponent(query)}`, title: 'Recherche sur la chaîne YouTube officielle' }];
 }
 
-function gameLinks(g, p) {
+// Bouton « Clipper » (mode éditeur) : ouvre l'outil de clipping local avec le match complet (jamais le
+// résumé : l'analyse ne retrouve dans un résumé que les paniers montrés), la page FIBA du match
+// (play-by-play), le nom et le numéro de la joueuse. Pas de match complet : pas de bouton.
+function clipLink(g, l) {
+  const clip = state.config.clipping;
+  if (!ADMIN || !clip?.url || !l || l.status !== 'played') return null;
+  if (!g.youtube?.url || g.youtube.kind !== 'full') return null;
+  const q = new URLSearchParams({
+    video: g.youtube.url,
+    pbp: g.links.livestats, // feuille de match FIBA LiveStats (play-by-play lu par l'outil)
+    name: state.byId.get(l.player_id)?.name ?? l.name ?? '',
+    number: l.jersey ?? '',
+    team: l.side === 'home' ? '1' : '2', // FIBA LiveStats : équipe 1 = à domicile
+    zones: 'lfb', // habillage TV de la Wonderligue : zones posées et analyse lancée par l'outil
+    t: Date.now().toString(36), // adresse unique : Chrome ne ressert jamais une ancienne page de l'outil
+  });
+  return { label: clip.label ?? 'Clipper', url: `${clip.url}?${q}`, title: 'Match complet : ouvrir dans l\'outil de clipping (vidéo, play-by-play, joueuse et zones préremplis, analyse lancée)' };
+}
+
+// Double-double avec les passes (10 ou plus) : second bouton « Clipper passes », même lien avec
+// mode=passes (l'outil monte alors les paniers des coéquipières sur les passes de la joueuse).
+function clipLinks(g, l) {
+  const c = clipLink(g, l);
+  if (!c) return [];
+  if ((l.stats?.ast ?? 0) < 10) return [c];
+  const u = new URL(c.url);
+  u.searchParams.set('mode', 'passes');
+  return [c, { label: c.label.replace(/^(\S+)/, '$1 passes'), url: u.toString(), title: `${l.stats.ast} passes décisives : montage des paniers sur ses passes` }];
+}
+
+function gameLinks(g, line) {
+  const clips = clipLinks(g, line);
   return [
-    { label: 'FIBA LiveStats', url: g.links.livestats, title: 'Feuille de match officielle (box score et play-by-play)' },
-    g.links.lfb ? { label: 'Fiche LFB', url: g.links.lfb, title: 'Page du match sur basketlfb.com' } : null,
-    g.youtube ? { label: 'Match complet', url: g.youtube, title: 'Match complet sur LFB TV (YouTube)' } : null,
-    ...(p ? clipLinks(g, p) : []),
-  ].filter(Boolean);
+    { label: 'FIBA LiveStats', url: g.links.livestats, title: 'Feuille de match officielle FFBB (box score et play-by-play)' },
+    ...(g.links.lfb ? [{ label: 'Fiche LFB', url: g.links.lfb, title: 'Page du match sur basketlfb.com' }] : []),
+    ...youtubeLinks(g),
+    ...clips,
+  ];
 }
 const linkTag = (l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener"${l.title ? ` title="${esc(l.title)}"` : ''}>${esc(l.label)}</a>`;
-const linksHTML = (g, p) => `<div class="links">${gameLinks(g, p).map(linkTag).join('')}</div>`;
+const linksHTML = (g, line) => `<div class="links">${gameLinks(g, line).map(linkTag).join('')}</div>`;
 
-// ---------- blocs ----------
+// ---------- calculs ----------
+function perspective(g, l) {
+  const us = l.side === 'home' ? g.home : g.away;
+  const them = us === g.home ? g.away : g.home;
+  const where = us === g.home ? 'vs' : 'à';
+  const res = us.score != null && them.score != null ? (us.score > them.score ? 'V' : us.score < them.score ? 'D' : 'N') : '';
+  return { us, them, where, res };
+}
+
+// Ligne encadrée : points au moins égaux au seuil de la joueuse (config/site.json → highlight.players,
+// sinon highlight.points), ou double-double / triple-double.
+function pointsThreshold(playerId) {
+  const h = state.config.highlight ?? {};
+  return h.players?.[playerId] ?? h.points ?? 15;
+}
+function isBig(s, playerId) {
+  if (!s) return { big: false, tags: [] };
+  const tens = ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => s[k] >= 10).length;
+  const tags = [];
+  if (s.pts >= pointsThreshold(playerId)) tags.push(`${s.pts} pts`);
+  if (tens >= 3) tags.push('Triple-double');
+  else if (tens === 2) tags.push('Double-double');
+  return { big: tags.length > 0, tags };
+}
+
+// Toutes les lignes d'une joueuse, du plus ancien au plus récent.
+function playerLog(id) {
+  return state.games
+    .filter((g) => g.lines?.[id])
+    .map((g) => ({ g, l: g.lines[id] }))
+    .sort((a, b) => a.g.tipoff_utc.localeCompare(b.g.tipoff_utc));
+}
+
+function averages(id, comp = '') {
+  const played = playerLog(id).filter((x) => x.l.status === 'played' && x.l.stats && true);
+  const n = played.length;
+  const sum = (k) => played.reduce((a, x) => a + (x.l.stats[k] ?? 0), 0);
+  const avg = (k) => (n ? sum(k) / n : NaN);
+  return {
+    gp: n,
+    gs: played.filter((x) => x.l.starter).length,
+    min: avg('min'), pts: avg('pts'), reb: avg('reb'), oreb: avg('oreb'), dreb: avg('dreb'),
+    ast: avg('ast'), stl: avg('stl'), blk: avg('blk'), to: avg('to'), pf: avg('pf'),
+    fgm: sum('fgm'), fga: sum('fga'), tpm: sum('tpm'), tpa: sum('tpa'), ftm: sum('ftm'), fta: sum('fta'),
+  };
+}
+
+// ---------- composants ----------
+const statusText = (l) => (l.status === 'dnp' ? 'Sur la feuille de match, n\'a pas joué' : 'Absente de la feuille de match');
+
 function statlineHTML(s) {
   const cell = (k, v, sub = '') => `<div><dt>${k}</dt><dd>${v}${sub ? ` <span>${sub}</span>` : ''}</dd></div>`;
   return `<dl class="statline">
@@ -76,136 +160,301 @@ function statlineHTML(s) {
   </dl>`;
 }
 
-function opponent(g, p) {
-  const us = g[p.side];
-  const them = p.side === 'home' ? g.away : g.home;
-  const res = us.score > them.score ? 'V' : us.score < them.score ? 'D' : 'N';
-  return { us, them, where: p.side === 'home' ? 'vs' : 'à', res };
+function gameMeta(g, l) {
+  const { them, where, res, us } = perspective(g, l);
+  const score = us.score != null ? `<span class="${res === 'V' ? 'res-w' : 'res-l'}">${res} ${us.score}-${them.score}</span>` : '';
+  return `<div class="game-meta">${where} ${esc(teamName(them))} · ${score}<br>${esc(dateFR(g.date))}${kickoff(g) ? ` · ${esc(kickoff(g))}` : ''}<br>Journée ${esc(g.round)}</div>`;
 }
 
-function gameMeta(g, p) {
-  const { us, them, where, res } = opponent(g, p);
-  return `<div class="game-meta">${where} ${esc(them.name)} · <span class="${res === 'V' ? 'res-w' : 'res-l'}">${res} ${us.score}-${them.score}</span><br>`
-    + `Journée ${g.round} · ${esc(dateFR(g.date))} · ${esc(timeParis(g.tipoff_utc))}</div>`;
-}
-
-const face = (p, big = false) => (p.photo ? `<img class="face${big ? ' big' : ''}" src="${esc(p.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '');
-
-function cardHTML(g, p) {
-  return `<article class="card big">
+function cardHTML(g, l) {
+  const p = state.byId.get(l.player_id);
+  const s = l.stats;
+  const { big, tags } = isBig(s, l.player_id);
+  return `<article class="card${big ? ' big' : ''}">
     <div class="card-head">
-      <div class="who">${face(p)}<div>
-        <h3><a href="#/joueuse/${esc(p.player_id)}">${esc(p.name)}</a></h3>
-        <div class="team">${esc(p.team)} · n°${esc(p.jersey)}</div>
-      </div></div>
-      <div class="pts">${p.stats.pts}<small>PTS</small></div>
+      <div>
+        <h3><a href="#/joueuse/${esc(l.player_id)}">${esc(p?.name ?? l.player_id)}</a></h3>
+        <div class="team">${esc(l.team)}</div>
+      </div>
+      <div class="pts">${s.pts}<small>PTS</small></div>
     </div>
-    ${gameMeta(g, p)}
-    ${statlineHTML(p.stats)}
-    <div class="badges">${p.tags.map((t) => `<span class="badge accent">${esc(t)}</span>`).join('')}<span class="badge">${p.starter ? 'Titulaire' : 'Remplaçante'}</span></div>
-    ${linksHTML(g, p)}
+    ${gameMeta(g, l)}
+    ${statlineHTML(s)}
+    <div class="badges">${tags.map((t) => `<span class="badge accent">${esc(t)}</span>`).join('')}${l.starter ? '<span class="badge">Titulaire</span>' : '<span class="badge">Remplaçante</span>'}${compBadge(g)}</div>
+    ${linksHTML(g, l)}
   </article>`;
 }
 
 // ---------- pages ----------
-const rounds = () => [...new Set(state.games.filter((g) => g.played).map((g) => g.round))].sort((a, b) => a - b);
+const playedDays = () => [...new Set(state.games.filter((g) => Object.values(g.lines ?? {}).some((l) => l.status === 'played')).map((g) => g.date))].sort();
 
-function pageRound(n) {
-  const all = rounds();
-  const round = n ?? all.at(-1);
-  if (round == null) return '<h1>Dernière journée</h1><p class="empty">Aucun match joué pour l\'instant.</p>';
-  const games = state.games.filter((g) => g.round === round);
-  const played = games.filter((g) => g.played);
-  const perfs = played.flatMap((g) => g.perfs.map((p) => ({ g, p })))
-    .sort((a, b) => b.p.stats.pts - a.p.stats.pts || b.p.stats.reb - a.p.stats.reb);
-  const i = all.indexOf(round);
-  const href = (r) => (r === all.at(-1) ? '#/' : `#/journee/${r}`);
-  const prev = all[i - 1];
-  const next = all[i + 1];
-  const dates = [...new Set(games.map((g) => g.date))].sort();
-  const span = dates.length ? (dates.length > 1 ? `du ${dateFR(dates[0])} au ${dateFR(dates.at(-1))}` : dateFR(dates[0])) : '';
-  return `<h1>Journée ${round}</h1>
-    <p class="page-sub">${esc(span)} · ${played.length}/${games.length} matchs joués · ${perfs.length} performance${perfs.length > 1 ? 's' : ''} à 20 points ou en double-double</p>
+// Accueil : la semaine civile en cours (lundi → dimanche, heure de Paris). Les matchs de la semaine
+// précédente n'y sont pas : boutons « Semaine précédente / suivante » pour naviguer.
+const addDays = (ymd, n) => new Date(noon(ymd).getTime() + n * 86400000).toISOString().slice(0, 10);
+const todayParis = () => new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Paris' });
+const mondayOf = (ymd) => addDays(ymd, -((noon(ymd).getUTCDay() + 6) % 7));
+
+function pageHome(weekStart) {
+  const current = mondayOf(todayParis());
+  const start = weekStart ? mondayOf(weekStart) : current;
+  const end = addDays(start, 6);
+  const days = playedDays();
+  const games = state.games.filter((g) => g.date >= start && g.date <= end);
+  const lines = games.flatMap((g) => Object.values(g.lines ?? {}).map((l) => ({ g, l })));
+  // lignes encadrées d'abord, puis les autres ; dans chaque groupe, par points
+  const played = lines.filter((x) => x.l.status === 'played' && x.l.stats).sort((a, b) =>
+    isBig(b.l.stats, b.l.player_id).big - isBig(a.l.stats, a.l.player_id).big || b.l.stats.pts - a.l.stats.pts || b.l.stats.reb - a.l.stats.reb);
+  const others = lines.filter((x) => x.l.status !== 'played');
+  const prev = days.filter((d) => d < start).at(-1);
+  const next = days.find((d) => d > end);
+  const range = `du lundi ${dateFR(start, { day: 'numeric', month: 'long' })} au dimanche ${dateFR(end, { day: 'numeric', month: 'long', year: 'numeric' })}`;
+  const title = start === current ? 'Cette semaine' : `Semaine du ${dateFR(start, { day: 'numeric', month: 'long' })}`;
+  return `<h1>${esc(title)}</h1>
+    <p class="page-sub">${esc(range)} · ${played.length} ligne${played.length > 1 ? 's' : ''} de stats, ${games.length} match${games.length > 1 ? 's' : ''}</p>
     <div class="day-nav">
-      ${prev != null ? `<a class="btn ghost" href="${href(prev)}">← Journée ${prev}</a>` : ''}
-      ${next != null ? `<a class="btn ghost" href="${href(next)}">Journée ${next} →</a>` : ''}
+      ${prev ? `<a class="btn ghost" href="#/semaine/${mondayOf(prev)}">← Semaine précédente</a>` : ''}
+      ${next ? `<a class="btn ghost" href="#/semaine/${mondayOf(next)}">Semaine suivante →</a>` : start < current ? '<a class="btn ghost" href="#/">Cette semaine →</a>' : ''}
+      <a class="btn ghost" href="#/calendrier/${games.at(-1)?.date ?? (prev ?? start)}">Calendrier</a>
     </div>
-    <div class="cards">${perfs.map(({ g, p }) => cardHTML(g, p)).join('') || '<p class="empty">Aucune performance à 20 points ou en double-double.</p>'}</div>
-    <div class="round-games absents"><h2>Matchs de la journée</h2><ul>${games.map((g) => `<li>${esc(g.home.name)} ${g.played ? `<strong>${g.home.score}-${g.away.score}</strong>` : '–'} ${esc(g.away.name)}
-      <span class="muted">· ${esc(dateFR(g.date, { weekday: 'short', day: 'numeric', month: 'short' }))} ${esc(timeParis(g.tipoff_utc))}${g.played && !g.validated ? ' · feuille de match en attente' : ''}</span>
-      ${g.played ? ` · ${gameLinks(g).map(linkTag).join(' · ')}` : ''}</li>`).join('')}</ul>
-      </div>`;
+    <div class="cards">${played.map(({ g, l }) => cardHTML(g, l)).join('') || `<p class="empty">${start === current ? 'Pas encore de match cette semaine.' : 'Aucun match cette semaine-là.'}</p>`}</div>
+    ${others.length ? `<div class="absents"><h2>N'ont pas joué</h2><ul>${others.map(({ g, l }) => `<li><a href="#/joueuse/${esc(l.player_id)}">${esc(state.byId.get(l.player_id)?.name ?? l.player_id)}</a> (${esc(l.team)}, ${esc(dateShortFR(g.date))} ${perspective(g, l).where} ${esc(teamName(perspective(g, l).them))}) : ${statusText(l)}</li>`).join('')}</ul></div>` : ''}`;
+}
+
+// Retour de la fiche joueuse : vers la page d'où l'on vient (semaine, calendrier, tableau), sinon le tableau.
+let backTo = '#/tableau';
+function backLink() {
+  const [, page, arg] = backTo.replace(/^#\/?/, '#/').split('/');
+  const label = page === 'semaine' && arg ? `Semaine du ${dateFR(mondayOf(arg), { day: 'numeric', month: 'long' })}`
+    : page === 'calendrier' ? 'Calendrier'
+    : page === 'tableau' ? 'Tableau général'
+    : 'Cette semaine';
+  return `<a href="${esc(backTo || '#/')}">← ${esc(label)}</a>`;
 }
 
 function pagePlayer(id) {
-  const rows = state.games.flatMap((g) => g.perfs.filter((p) => p.player_id === id).map((p) => ({ g, p })))
-    .sort((a, b) => b.g.tipoff_utc.localeCompare(a.g.tipoff_utc));
-  if (!rows.length) return `<p><a href="#/joueuses">← Joueuses</a></p><p class="empty">Joueuse inconnue.</p>`;
-  const last = rows[0].p;
-  const teams = [...new Set(rows.map((r) => r.p.team))].join(', ');
-  const best = Math.max(...rows.map((r) => r.p.stats.pts));
-  const dd = rows.filter((r) => r.p.tags.some((t) => /double/i.test(t))).length;
-  return `<p><a href="${esc(backTo)}">← ${esc(backTo.startsWith('#/joueuses') ? 'Joueuses' : 'Journée')}</a></p>
-    <div class="who" style="margin-bottom:12px">${face(last, true)}<div><h1 style="margin:0">${esc(last.name)}</h1><p class="page-sub" style="margin:0">${esc(teams)}</p></div></div>
-    <p class="page-sub">${rows.length} performance${rows.length > 1 ? 's' : ''} · record : ${best} points · ${dd} double-double${dd > 1 ? 's' : ''}</p>
-    <div class="cards">${rows.map(({ g, p }) => cardHTML(g, p)).join('')}</div>`;
+  const p = state.byId.get(id);
+  if (!p) return `<h1>Joueuse introuvable</h1><p><a href="#/tableau">Retour au tableau</a></p>`;
+  const log = playerLog(id);
+  const bio = [
+    ['Club', p.club], ['Autres clubs cette saison', p.clubs?.filter((c) => c !== p.club).join(', ')],
+    ['Numéro', p.number], ['Poste', poste(p.position)],
+  ].filter(([, v]) => v);
+  const av = (k, v) => `<div class="avg"><div class="v">${v}</div><div class="k">${k}</div></div>`;
+  const block = (a) => `<div class="averages">
+      ${av('Matchs (tit.)', `${a.gp} (${a.gs})`)}${av('Points', fmt1(a.pts))}${av('Rebonds', fmt1(a.reb))}
+      ${av('Passes', fmt1(a.ast))}${av('Minutes', fmt1(a.min))}${av('Tirs', pct(a.fgm, a.fga))}
+      ${av('3 pts', pct(a.tpm, a.tpa))}${av('LF', pct(a.ftm, a.fta))}${av('Interceptions', fmt1(a.stl))}
+      ${av('Contres', fmt1(a.blk))}${av('Balles perdues', fmt1(a.to))}${av('Fautes', fmt1(a.pf))}
+    </div>`;
+  return `<p>${backLink()}</p>
+    <div class="who">${p.photo ? `<img class="face big" src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer">` : ''}<h1>${esc(p.name)}</h1></div>
+    <dl class="bio">${bio.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+    <h2>Moyennes de la saison</h2>${block(averages(id))}
+    <h2>Points match par match</h2>
+    ${log.length ? `<div class="chart-wrap">${pointsChart(log)}</div>` : '<p class="empty">Aucun match pour l\'instant.</p>'}
+    <h2>Game log</h2>
+    ${log.length ? gameLogTable(log) : '<p class="empty">Aucun match pour l\'instant.</p>'}`;
 }
 
-const listState = { sort: 'n' };
-function pagePlayers() {
-  const by = new Map();
-  for (const g of state.games) for (const p of g.perfs) {
-    const x = by.get(p.player_id) ?? { id: p.player_id, name: p.name, team: p.team, photo: p.photo, n: 0, pts20: 0, dd: 0, best: 0, last: '' };
-    x.n++;
-    if (p.stats.pts >= (state.config.highlight?.points ?? 20)) x.pts20++;
-    if (p.tags.some((t) => /double/i.test(t))) x.dd++;
-    x.best = Math.max(x.best, p.stats.pts);
-    if (g.tipoff_utc > x.last) { x.last = g.tipoff_utc; x.team = p.team; x.photo = p.photo || x.photo; }
-    by.set(p.player_id, x);
-  }
-  const k = listState.sort;
-  const list = [...by.values()].sort((a, b) => (k === 'name' ? a.name.localeCompare(b.name, 'fr') : b[k] - a[k] || b.n - a.n || b.best - a.best));
-  const th = (key, label) => `<th scope="col"><button type="button" class="sort" data-sort="${key}"${k === key ? ' aria-sort="descending"' : ''}>${label}</button></th>`;
-  return `<h1>Joueuses</h1>
-    <p class="page-sub">${list.length} joueuses ont au moins une performance à 20 points ou en double-double</p>
+function pointsChart(log) {
+  const W = Math.round(Math.min(900, Math.max(300, $main.clientWidth - 58))), H = 200, padL = 28, padB = 26, padT = 12;
+  const max = Math.max(10, ...log.map((x) => x.l.stats?.pts ?? 0));
+  const top = Math.ceil(max / 10) * 10;
+  const n = log.length;
+  const step = (W - padL - 8) / n;
+  const bw = Math.min(28, step * 0.6);
+  const y = (v) => padT + (H - padT - padB) * (1 - v / top);
+  const ticks = [0, top / 2, top];
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Points marqués par match">`;
+  for (const t of ticks) svg += `<line class="grid" x1="${padL}" x2="${W - 4}" y1="${y(t)}" y2="${y(t)}"/><text class="axis" x="${padL - 6}" y="${y(t) + 4}" text-anchor="end">${t.toLocaleString('fr-FR')}</text>`;
+  log.forEach(({ g, l }, i) => {
+    const x = padL + step * i + (step - bw) / 2;
+    const v = l.status === 'played' ? l.stats.pts : 0;
+    const { them, where } = perspective(g, l);
+    const label = `${dateShortFR(g.date)} ${where} ${teamName(them)} : ${l.status === 'played' ? `${v} pts, ${l.stats.reb} reb, ${l.stats.ast} pd` : statusText(l)}`;
+    const h = Math.max(0, y(0) - y(v));
+    svg += `<rect class="bar-hit" x="${padL + step * i}" y="${padT}" width="${step}" height="${H - padT - padB}" data-tip="${esc(label)}"/>`;
+    if (l.status === 'played' && h > 0) {
+      const r = Math.min(4, bw / 2, h);
+      svg += `<path class="bar" d="M${x},${y(0)} V${y(v) + r} Q${x},${y(v)} ${x + r},${y(v)} H${x + bw - r} Q${x + bw},${y(v)} ${x + bw},${y(v) + r} V${y(0)} Z"/>`;
+    } else {
+      svg += `<rect class="zero" x="${x}" y="${y(0) - 2}" width="${bw}" height="2"/>`;
+    }
+    if (n <= 12 || i % Math.ceil(n / 12) === 0) svg += `<text class="axis" x="${x + bw / 2}" y="${H - 8}" text-anchor="middle">${esc(dateShortFR(g.date))}</text>`;
+  });
+  return svg + '</svg>';
+}
+
+function gameLogTable(log) {
+  const rows = [...log].reverse().map(({ g, l }) => {
+    const { them, where, res, us } = perspective(g, l);
+    const s = l.stats;
+    const { big } = isBig(s, l.player_id);
+    const links = gameLinks(g, l).map(linkTag).join(' · ');
+    const stats = s
+      ? `<td>${l.starter ? 'oui' : ''}</td><td>${Math.round(s.min)}</td><td class="hl">${s.pts}</td><td>${s.reb} <span class="muted">(${s.oreb}/${s.dreb})</span></td><td>${s.ast}</td><td>${s.stl}</td><td>${s.blk}</td><td>${s.to}</td><td>${s.pf}</td><td>${s.fgm}-${s.fga}</td><td>${s.tpm}-${s.tpa}</td><td>${s.ftm}-${s.fta}</td>`
+      : `<td colspan="12" class="l muted">${statusText(l)}</td>`;
+    return `<tr class="${big ? 'big' : ''}"><td class="first-col">${esc(dateShortFR(g.date))}</td><td class="l">${compBadge(g)}</td><td class="l">${where} ${esc(teamName(them))}</td><td class="l">${us.score != null ? `${res} ${us.score}-${them.score}` : ''}</td>${stats}<td class="l">${links}</td></tr>`;
+  });
+  return `<div class="table-wrap"><table>
+    <thead><tr><th class="first-col">Date</th><th class="l">J.</th><th class="l">Adversaire</th><th class="l">Score</th><th>Tit.</th><th>MIN</th><th>PTS</th><th>REB (O/D)</th><th>PD</th><th>INT</th><th>CTR</th><th>BP</th><th>FTE</th><th>TIRS</th><th>3 PTS</th><th>LF</th><th class="l">Liens</th></tr></thead>
+    <tbody>${rows.join('')}</tbody></table></div>`;
+}
+
+// ---------- tableau général ----------
+const tableState = { sort: 'pts', dir: -1, club: '', min: '' };
+const COLS = [
+  ['name', 'Joueuse', 'l'], ['gp', 'MJ'], ['pts', 'PTS'], ['reb', 'REB'], ['ast', 'PD'], ['min', 'MIN'],
+  ['stl', 'INT'], ['blk', 'CTR'], ['to', 'BP'], ['fgp', 'Tirs %'], ['tpp', '3 pts %'], ['ftp', 'LF %'],
+  ['club', 'Club', 'l'],
+];
+
+function tableRows() {
+  return state.players.map((p) => {
+    const a = averages(p.id);
+    return {
+      id: p.id, name: p.name, club: p.club,
+      gp: a.gp, min: a.min, pts: a.pts, reb: a.reb, ast: a.ast, stl: a.stl, blk: a.blk, to: a.to,
+      fgp: a.fga ? a.fgm / a.fga : NaN, tpp: a.tpa ? a.tpm / a.tpa : NaN, ftp: a.fta ? a.ftm / a.fta : NaN,
+    };
+  });
+}
+
+function pageTable() {
+  const all = tableRows();
+  const opts = (vals, cur) => [...new Set(vals)].filter(Boolean).sort((a, b) => a.localeCompare(b, 'fr')).map((v) => `<option${v === cur ? ' selected' : ''}>${esc(v)}</option>`).join('');
+  const { club, min, sort, dir } = tableState;
+  const rows = all
+    .filter((r) => r.gp && (!club || r.club === club) && (!min || r.min >= Number(min)))
+    .sort((a, b) => {
+      const x = a[sort], y = b[sort];
+      if (typeof x === 'string') return dir * x.localeCompare(y, 'fr');
+      const nx = Number.isFinite(x) ? x : -Infinity, ny = Number.isFinite(y) ? y : -Infinity;
+      return dir * (nx - ny) || a.name.localeCompare(b.name, 'fr');
+    });
+  const val = (r, k) => {
+    if (['fgp', 'tpp', 'ftp'].includes(k)) return Number.isFinite(r[k]) ? `${(r[k] * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 })}` : '–';
+    if (k === 'name') return `<a href="#/joueuse/${esc(r.id)}">${esc(r.name)}</a>`;
+    if (typeof r[k] === 'string') return esc(r[k]);
+    if (k === 'gp') return r.gp;
+    return r.gp ? fmt1(r[k]) : '–';
+  };
+  return `<h1>Tableau général</h1>
+    <p class="page-sub">${rows.length} joueuses · moyennes par match joué</p>
+    <div class="filters" role="group" aria-label="Filtres">
+      <label>Club<select data-filter="club" class="${club ? 'active' : ''}"><option value="">Tous</option>${opts(all.map((r) => r.club), club)}</select></label>
+      <label>Minutes par match<select data-filter="min" class="${min ? 'active' : ''}"><option value="">Toutes</option>${[10, 15, 20, 25].map((m) => `<option value="${m}"${String(m) === min ? ' selected' : ''}>${m} min ou plus</option>`).join('')}</select></label>
+      ${club || min ? '<button class="btn ghost" data-reset>Réinitialiser</button>' : ''}
+    </div>
     <div class="table-wrap"><table>
-      <thead><tr>${th('name', 'Joueuse')}<th scope="col">Club</th>${th('n', 'Perfs')}${th('pts20', '20 pts +')}${th('dd', 'Double-doubles')}${th('best', 'Record')}</tr></thead>
-      <tbody>${list.map((x) => `<tr><td class="first-col"><a href="#/joueuse/${esc(x.id)}">${esc(x.name)}</a></td><td>${esc(x.team)}</td><td>${x.n}</td><td>${x.pts20}</td><td>${x.dd}</td><td>${x.best}</td></tr>`).join('')}</tbody>
+      <thead><tr>${COLS.map(([k, label, cls], i) => `<th class="${cls ?? ''}${i === 0 ? ' first-col' : ''}" aria-sort="${k === sort ? (dir < 0 ? 'descending' : 'ascending') : 'none'}"><button data-sort="${k}">${label}</button></th>`).join('')}</tr></thead>
+      <tbody>${rows.map((r) => `<tr>${COLS.map(([k, , cls], i) => `<td class="${cls ?? ''}${i === 0 ? ' first-col' : ''}">${val(r, k)}</td>`).join('')}</tr>`).join('')}</tbody>
     </table></div>`;
 }
 
-// ---------- navigation ----------
-let backTo = '#/';
+$main.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-sort]');
+  if (b) {
+    const k = b.dataset.sort;
+    tableState.dir = tableState.sort === k ? -tableState.dir : ['name', 'club'].includes(k) ? 1 : -1;
+    tableState.sort = k;
+    render();
+    document.querySelector(`[data-sort="${k}"]`)?.focus();
+  }
+  if (e.target.closest('[data-reset]')) {
+    Object.assign(tableState, { club: '', min: '' });
+    render();
+  }
+});
+$main.addEventListener('change', (e) => {
+  const f = e.target.dataset?.filter;
+  if (f) {
+    tableState[f] = e.target.value;
+    render();
+    document.querySelector(`[data-filter="${f}"]`)?.focus();
+  }
+  if (e.target.id === 'day-picker' && e.target.value) location.hash = `#/calendrier/${e.target.value}`;
+});
+
+// ---------- calendrier ----------
+function pageCalendar(day) {
+  const days = [...new Set(state.games.map((g) => g.date))].sort();
+  const d = day ?? days.at(-1) ?? new Date().toISOString().slice(0, 10);
+  const games = state.games.filter((g) => g.date === d).sort((a, b) => a.tipoff_utc.localeCompare(b.tipoff_utc));
+  const i = days.indexOf(d);
+  const prev = i > 0 ? days[i - 1] : days.filter((x) => x < d).at(-1);
+  const next = i >= 0 ? days[i + 1] : days.find((x) => x > d);
+  const block = (g) => {
+    const lines = Object.values(g.lines ?? {}).sort((a, b) => (b.stats?.pts ?? -1) - (a.stats?.pts ?? -1));
+    return `<section class="game-block">
+      <h3>${esc(teamName(g.home))} ${g.home.score ?? ''} – ${g.away.score ?? ''} ${esc(teamName(g.away))}</h3>
+      <div class="game-meta">Journée ${esc(g.round)}${kickoff(g) ? ` · ${esc(kickoff(g))}` : ''}${g.venue ? ` · ${esc(g.venue)}` : ''}</div>
+      <ul>${lines.map((l) => {
+        const s = l.stats;
+        const { big, tags } = isBig(s, l.player_id);
+        return `<li><a href="#/joueuse/${esc(l.player_id)}"><strong>${esc(state.byId.get(l.player_id)?.name ?? l.player_id)}</strong></a>
+          <span class="muted">${esc(l.team)}</span>
+          ${s ? `<span${big ? ' style="color:var(--t6-green);font-weight:700"' : ''}>${s.pts} pts, ${s.reb} reb, ${s.ast} pd · ${Math.round(s.min)} min · ${s.fgm}-${s.fga} tirs</span>${tags.map((t) => `<span class="badge accent">${esc(t)}</span>`).join('')}` : `<span class="muted">${statusText(l)}</span>`}${clipLinks(g, l).map((c) => ` ${linkTag(c)}`).join('')}</li>`;
+      }).join('')}</ul>
+      ${linksHTML(g)}
+    </section>`;
+  };
+  return `<h1>Calendrier</h1>
+    <div class="day-nav">
+      ${prev ? `<a class="btn ghost" href="#/calendrier/${prev}" aria-label="Journée précédente">← ${esc(dateShortFR(prev))}</a>` : ''}
+      <label class="filters" style="margin:0"><span class="sr">Date</span><input type="date" id="day-picker" class="active" value="${d}" min="2026-09-01" max="2027-04-30"></label>
+      ${next ? `<a class="btn ghost" href="#/calendrier/${next}" aria-label="Journée suivante">${esc(dateShortFR(next))} →</a>` : ''}
+    </div>
+    <p class="page-sub">${esc(dateFR(d))} · ${games.length} match${games.length > 1 ? 's' : ''}</p>
+    ${games.map(block).join('') || '<p class="empty">Aucun match ce jour-là.</p>'}`;
+}
+
+// ---------- infobulle du graphique ----------
+function showTip(e) {
+  const t = e.target.closest?.('[data-tip]');
+  if (!t) return hideTip();
+  $tip.textContent = t.dataset.tip;
+  $tip.hidden = false;
+  const r = t.getBoundingClientRect();
+  const x = Math.min(window.innerWidth - $tip.offsetWidth - 8, Math.max(8, r.left + r.width / 2 - $tip.offsetWidth / 2));
+  $tip.style.left = `${x}px`;
+  $tip.style.top = `${Math.max(8, r.top - $tip.offsetHeight - 8)}px`;
+  t.nextElementSibling?.classList?.add('on');
+}
+function hideTip() {
+  $tip.hidden = true;
+  document.querySelectorAll('.bar.on').forEach((b) => b.classList.remove('on'));
+}
+$main.addEventListener('pointerover', (e) => { hideTip(); showTip(e); });
+$main.addEventListener('pointerleave', hideTip);
+window.addEventListener('scroll', hideTip, { passive: true });
+
+// ---------- routeur ----------
 function render() {
   const [, page, arg] = location.hash.replace(/^#\/?/, '#/').split('/');
   let html;
   let nav = 'home';
   if (page === 'joueuse') { html = pagePlayer(decodeURIComponent(arg ?? '')); nav = ''; }
-  else if (page === 'joueuses') { html = pagePlayers(); nav = 'joueuses'; }
-  else if (page === 'journee' && arg) { html = pageRound(Number(arg)); nav = Number(arg) === rounds().at(-1) ? 'home' : ''; }
-  else html = pageRound();
+  else if (page === 'tableau') { html = pageTable(); nav = 'tableau'; }
+  else if (page === 'calendrier') { html = pageCalendar(arg); nav = 'calendrier'; }
+  else if (page === 'semaine') html = pageHome(arg);
+  else html = pageHome();
   $main.innerHTML = html;
   document.querySelectorAll('[data-nav]').forEach((a) => (a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
-  document.title = page === 'joueuse' ? `${$main.querySelector('h1')?.textContent ?? ''} · Les perfs de la Wonderligue` : 'Les perfs de La Boulangère Wonderligue';
+  const p = page === 'joueuse' ? state.byId.get(decodeURIComponent(arg ?? '')) : null;
+  document.title = `${p ? `${p.name} · ` : ''}La Boulangère Wonderligue`;
 }
 
-$main.addEventListener('click', (e) => {
-  const b = e.target.closest('button.sort');
-  if (!b) return;
-  listState.sort = b.dataset.sort;
-  render();
-});
-
 let lastHash = location.hash;
-const scrollOf = {};
+const scrollOf = {};   // position de lecture de chaque page, retrouvée au retour d'une fiche joueuse
 window.addEventListener('hashchange', () => {
-  const pg = (h) => h.replace(/^#\/?/, '#/').split('/')[1] || '';
-  const norm = (h) => (h && h !== '#' ? h : '#/');
+  const page = (h) => h.replace(/^#\/?/, '#/').split('/')[1] || '';
+  const norm = (h) => (h && h !== '#' ? h : '#/');   // accueil : « », « # » ou « #/ »
   const from = norm(lastHash), to = norm(location.hash);
   scrollOf[from] = window.scrollY;
-  if (pg(to) === 'joueuse' && pg(from) !== 'joueuse') backTo = from;
+  if (page(to) === 'joueuse' && page(from) !== 'joueuse') backTo = from;
   render();
-  if (pg(from) === 'joueuse' && to === backTo && scrollOf[to] != null) window.scrollTo(0, scrollOf[to]);
+  if (page(from) === 'joueuse' && to === backTo && scrollOf[to] != null) window.scrollTo(0, scrollOf[to]);
   else if (to !== from) window.scrollTo(0, 0);
   lastHash = location.hash;
 });
@@ -216,7 +465,12 @@ async function load() {
     return r.json();
   });
   try {
-    const [games, config] = await Promise.all([get('data/games.json'), get('config/site.json')]);
+    const [players, games, config] = await Promise.all([
+      get('data/players.json'), get('data/games.json'), get('config/site.json'),
+    ]);
+    const excluded = new Set(config.excluded_players ?? []);
+    state.players = players.filter((p) => p.active !== false && !excluded.has(p.id));
+    state.byId = new Map(players.map((p) => [p.id, p]));
     state.games = games.games ?? [];
     state.config = config;
     state.updated = games.updated ?? null;
@@ -248,7 +502,7 @@ $refreshBtn.addEventListener('click', async () => {
   const before = state.updated;
   $refreshBtn.disabled = true;
   $refreshInfo.textContent = url
-    ? 'Sur GitHub, cliquer « Run workflow ». Le site se rechargera tout seul (2 à 5 min).'
+    ? 'Sur GitHub, cliquer « Run workflow ». Le site se rechargera tout seul (5 à 10 min).'
     : 'Rechargement des données…';
   await load();
   if (!url) {

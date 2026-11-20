@@ -185,9 +185,7 @@ select.active, input.active { border-color: var(--t6-green); box-shadow: inset 0
 /* Pastille de compétition */
 .badge.comp { border-color: var(--line); color: var(--text); background: var(--surface-2); }
 
-/* LFB : photo de la joueuse sur les cartes et sa fiche */
+/* LFB : photo de la joueuse sur sa fiche */
+.who { display: flex; gap: 14px; align-items: center; margin-bottom: 8px; }
 .face { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--line); flex: none; }
-.who { display: flex; gap: 10px; align-items: center; min-width: 0; }
 .face.big { width: 72px; height: 72px; }
-.round-games { margin-top: 22px; }
-.round-games li { margin-bottom: 4px; }

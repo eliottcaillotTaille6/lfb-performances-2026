@@ -72,7 +72,7 @@ jobs:
         run: |
           git config user.name "lfb-performances-bot"
           git config user.email "lfb-performances-bot@users.noreply.github.com"
-          git add data/games.json data/missing-games.md
+          git add data/games.json data/players.json data/missing-games.md
           git diff --cached --quiet || git commit -m "Données du $(TZ=Europe/Paris date +%F)"
           git push
 

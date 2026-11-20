@@ -15,7 +15,6 @@ const SITE = 'https://basketlfb.com';
 const LIVESTATS = 'https://fibalivestats.dcd.shared.geniussports.com';
 const OUT = 'data/games.json';
 const config = JSON.parse(fs.readFileSync('config/site.json', 'utf8'));
-const MIN_POINTS = config.highlight?.points ?? 20;
 
 const readJSON = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d);
 const store = readJSON(OUT, { games: [] });
@@ -88,35 +87,31 @@ const minutes = (v) => {
   return m ? Number(m[1]) + Number(m[2]) / 60 : Number(v) || 0;
 };
 
-function tags(s) {
-  const tens = ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => s[k] >= 10).length;
-  return [s.pts >= MIN_POINTS ? `${s.pts} points` : null, tens >= 3 ? 'Triple-double' : tens === 2 ? 'Double-double' : null].filter(Boolean);
-}
-
-function performances(game, data) {
-  const perfs = [];
+// Une ligne par joueuse inscrite sur la feuille de match : « played » (a joué), « dnp » (sur la feuille, n'a pas joué).
+function lines(game, data) {
+  const out = {};
   for (const [tno, side] of [['1', 'home'], ['2', 'away']]) {
-    const team = data.tm?.[tno];
-    for (const p of Object.values(team?.pl ?? {})) {
+    for (const p of Object.values(data.tm?.[tno]?.pl ?? {})) {
       const s = Object.fromEntries(Object.entries(STAT).map(([k, f]) => [k, k === 'min' ? Math.round(minutes(p[f]) * 10) / 10 : Number(p[f]) || 0]));
-      const t = tags(s);
-      if (!t.length) continue;
       const name = `${nameCase(p.firstName)} ${nameCase(p.familyName)}`.trim();
-      perfs.push({
-        player_id: slugify(name),
+      const id = slugify(name);
+      if (!id) continue;
+      const played = s.min > 0 || s.pts > 0 || s.reb > 0 || s.ast > 0 || s.fga > 0 || s.fta > 0;
+      out[id] = {
+        player_id: id,
         name,
-        jersey: String(p.shirtNumber ?? ''),
-        side,
         team: game[side].name,
-        team_code: game[side].code,
+        side,
+        jersey: String(p.shirtNumber ?? ''),
         starter: !!Number(p.starter),
         photo: p.photoT || p.photoS || null,
-        stats: s,
-        tags: t,
-      });
+        position: p.playingPosition || '',
+        status: played ? 'played' : 'dnp',
+        stats: played ? s : null,
+      };
     }
   }
-  return perfs.sort((a, b) => b.stats.pts - a.stats.pts || b.stats.reb - a.stats.reb);
+  return out;
 }
 
 // ---------- traitement ----------
@@ -129,14 +124,14 @@ const games = [];
 for (const c of calendar) {
   const prev = known.get(c.id);
   const played = c.home.score != null && c.away.score != null && Date.parse(c.tipoff_utc) < Date.now();
-  const g = { ...c, played, perfs: prev?.perfs ?? [], validated: prev?.validated ?? false };
+  const g = { ...c, played, lines: prev?.lines ?? {}, validated: prev?.validated ?? false };
   // vidéo : lien du calendrier LFB, sinon celle déjà trouvée, sinon recherche sur la chaîne LFB TV
-  g.youtube_source = c.youtube ? 'lfb' : prev?.youtube ? prev.youtube_source : null;
-  g.youtube = c.youtube ?? prev?.youtube ?? null;
+  const prevUrl = prev?.youtube?.url ?? null;
+  g.youtube = c.youtube ? { url: c.youtube, kind: 'full', source: 'calendrier LFB' } : prevUrl ? prev.youtube : null;
   if (played && !g.youtube) {
     try {
-      g.youtube = await findFullGame(c);
-      if (g.youtube) g.youtube_source = 'youtube';
+      const url = await findFullGame(c);
+      if (url) g.youtube = { url, kind: 'full', source: 'recherche YouTube' };
     } catch (e) {
       errors.push(`Recherche YouTube ${c.home.name} – ${c.away.name} : ${e.message}`);
     }
@@ -151,10 +146,10 @@ for (const c of calendar) {
       const ok = sum('1') === c.home.score && sum('2') === c.away.score
         && Number(data.tm?.['1']?.score) === c.home.score && Number(data.tm?.['2']?.score) === c.away.score;
       if (ok) {
-        g.perfs = performances(g, data);
+        g.lines = lines(g, data);
         g.validated = true;
       } else {
-        g.perfs = [];
+        g.lines = {};
         g.validated = false;
         missing.push(`- J${c.round} ${c.date} ${c.home.name} – ${c.away.name} (${c.home.score}-${c.away.score}) : box score FIBA LiveStats `
           + `${sum('1')}-${sum('2')}, différent du score officiel (${c.links.livestats})`);
@@ -173,7 +168,23 @@ fs.writeFileSync('data/missing-games.md', `# Matchs joués non publiés\n\nMis �
 
 const played = games.filter((g) => g.played);
 const noVideo = played.filter((g) => !g.youtube);
-const perfs = games.reduce((a, g) => a + g.perfs.length, 0);
+// Joueuses : toutes celles vues sur une feuille de match, avec leur club du dernier match
+const byPlayer = new Map();
+for (const g of games) {
+  for (const l of Object.values(g.lines ?? {})) {
+    const p = byPlayer.get(l.player_id) ?? { id: l.player_id, name: l.name, clubs: [], active: true };
+    p.club = l.team;
+    p.number = l.jersey;
+    if (l.photo) p.photo = l.photo;
+    if (l.position) p.position = l.position;
+    if (!p.clubs.includes(l.team)) p.clubs.push(l.team);
+    byPlayer.set(l.player_id, p);
+  }
+}
+const players = [...byPlayer.values()].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+fs.writeFileSync('data/players.json', JSON.stringify(players, null, 1) + '\n');
+const tens = (st) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => st[k] >= 10).length;
+const perfs = games.flatMap((g) => Object.values(g.lines ?? {})).filter((l) => l.stats && (l.stats.pts >= (config.highlight?.points ?? 20) || tens(l.stats) >= 2)).length;
 console.log(`Calendrier : ${games.length} matchs · joués : ${played.length} · validés : ${played.filter((g) => g.validated).length}`
-  + ` · sans vidéo : ${noVideo.length} · box scores relus : ${fetched} · performances : ${perfs} · non publiés : ${missing.length} · erreurs : ${errors.length}`);
+  + ` · sans vidéo : ${noVideo.length} · box scores relus : ${fetched} · joueuses : ${players.length} · lignes encadrées : ${perfs} · non publiés : ${missing.length} · erreurs : ${errors.length}`);
 for (const e of errors) console.log(`  ! ${e}`);
