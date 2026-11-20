@@ -128,7 +128,8 @@ for (const c of calendar) {
   // vidéo : lien du calendrier LFB, sinon celle déjà trouvée, sinon recherche sur la chaîne LFB TV
   const prevUrl = prev?.youtube?.url ?? null;
   g.youtube = c.youtube ? { url: c.youtube, kind: 'full', source: 'calendrier LFB' } : prevUrl ? prev.youtube : null;
-  if (played && !g.youtube) {
+  // matchs sans vidéo connus (config/site.json → no_video, ex. diffusion en panne) : pas de recherche
+  if (played && !g.youtube && !config.no_video?.[c.id]) {
     try {
       const url = await findFullGame(c);
       if (url) g.youtube = { url, kind: 'full', source: 'recherche YouTube' };
@@ -167,7 +168,7 @@ fs.writeFileSync('data/missing-games.md', `# Matchs joués non publiés\n\nMis �
   + (missing.length ? missing.join('\n') : 'Aucun : tous les matchs joués sont conformes au score officiel.') + '\n');
 
 const played = games.filter((g) => g.played);
-const noVideo = played.filter((g) => !g.youtube);
+const noVideo = played.filter((g) => !g.youtube && !config.no_video?.[g.id]);
 // Joueuses : toutes celles vues sur une feuille de match, avec leur club du dernier match
 const byPlayer = new Map();
 for (const g of games) {

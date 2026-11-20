@@ -73,4 +73,5 @@ npm run dev       # site local sur http://localhost:4321 (variable PORT pour cha
 - La page calendrier de basketlfb.com et les feuilles FIBA LiveStats ne sont pas des API documentées : si leur format
   change, `update.mjs` s'arrête avec une erreur (moins de 100 matchs lus) plutôt que de publier des chiffres faux.
 - Une même joueuse écrite différemment sur deux feuilles de match aurait deux fiches.
-- Landerneau – Chartres (J8) n'a pas de vidéo au lancement : rien n'a été publié sur la chaîne LFB TV.
+- Matchs sans vidéo connus (diffusion en panne) : `config/site.json` → `no_video` (identifiant FIBA LiveStats du match),
+  la vidéo n'y est plus recherchée. Landerneau – Chartres (J8) est dans ce cas.

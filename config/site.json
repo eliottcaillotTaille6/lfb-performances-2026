@@ -13,5 +13,8 @@
   "youtube": {
     "label": "YouTube",
     "search_url": "https://www.youtube.com/@BasketLFBTV/search?query="
+  },
+  "no_video": {
+    "2875477": "Landerneau – Chartres (J8) : diffusion en panne, pas de vidéo"
   }
 }
