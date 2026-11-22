@@ -123,6 +123,20 @@ let fetched = 0;
 const games = [];
 for (const c of calendar) {
   const prev = known.get(c.id);
+  // le calendrier LFB tarde parfois à afficher le score (ex. Villeneuve – Charleville, J9, encore « à venir » 3 h après) :
+  // 2 h 30 après l'entre-deux sans score, on prend le score final de la feuille FIBA LiveStats si le match y est terminé
+  if ((c.home.score == null || c.away.score == null) && Date.now() - Date.parse(c.tipoff_utc) > 2.5 * 3600000) {
+    try {
+      const d = await fetchJSON(`${LIVESTATS}/data/${c.id}/data.json`, { ttl: 0 });
+      const h = Number(d.tm?.['1']?.score), a = Number(d.tm?.['2']?.score);
+      const fini = Number(d.period) >= 4 && /^0?0:00/.test(String(d.clock ?? '')) && Number.isFinite(h) && Number.isFinite(a) && h !== a;
+      if (fini) {
+        c.home.score = h; c.away.score = a; c.score_source = 'FIBA LiveStats';
+      }
+    } catch (e) {
+      errors.push(`Score FIBA LiveStats ${c.id} (${c.home.name} – ${c.away.name}) : ${e.message}`);
+    }
+  }
   const played = c.home.score != null && c.away.score != null && Date.parse(c.tipoff_utc) < Date.now();
   const g = { ...c, played, lines: prev?.lines ?? {}, validated: prev?.validated ?? false };
   // vidéo : lien du calendrier LFB, sinon celle déjà trouvée, sinon recherche sur la chaîne LFB TV
