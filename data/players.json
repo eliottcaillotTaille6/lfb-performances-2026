@@ -197,6 +197,17 @@
   "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b337db338194a9aafcda569ca6e98a47T1.jpg"
  },
  {
+  "id": "bella-murekatete",
+  "name": "Bella Murekatete",
+  "clubs": [
+   "La Tronche Meylan"
+  ],
+  "active": true,
+  "club": "La Tronche Meylan",
+  "number": "55",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/d64f66f317e7fff1ab231636c4e2a60dT1.jpg"
+ },
+ {
   "id": "bethy-mununga",
   "name": "Bethy Mununga",
   "clubs": [
@@ -577,6 +588,16 @@
   "photo": "https://images.statsengine.playbyplay.api.geniussports.com/b72571a110ea92ef3e0ec2fed2dee29cT1.jpg"
  },
  {
+  "id": "jasmine-bailey",
+  "name": "Jasmine Bailey",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "10"
+ },
+ {
   "id": "jasmine-thomas",
   "name": "Jasmine Thomas",
   "clubs": [
@@ -672,7 +693,7 @@
   ],
   "active": true,
   "club": "Lyon",
-  "number": "1",
+  "number": "19",
   "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a1ea5cd8508f6301c703d228128cfdb4T1.jpg"
  },
  {
@@ -709,6 +730,17 @@
   "number": "12",
   "photo": "https://images.statsengine.playbyplay.api.geniussports.com/ffeadd30cb332be3188c3d1e410e2bd3T1.jpg",
   "position": "3"
+ },
+ {
+  "id": "lafia-bagayoko",
+  "name": "Lafia Bagayoko",
+  "clubs": [
+   "Chartres"
+  ],
+  "active": true,
+  "club": "Chartres",
+  "number": "17",
+  "photo": "https://images.statsengine.playbyplay.api.geniussports.com/a0f4a19e3d6a134c7b5bebc749b50a9cT1.jpg"
  },
  {
   "id": "lamia-h-saina",
@@ -852,6 +884,16 @@
   "club": "Angers",
   "number": "13",
   "photo": "https://images.statsengine.playbyplay.api.geniussports.com/fb317c984777d3d9e71c49f62627eeb3T1.jpg"
+ },
+ {
+  "id": "louann-richeter",
+  "name": "Louann Richeter",
+  "clubs": [
+   "Charnay"
+  ],
+  "active": true,
+  "club": "Charnay",
+  "number": "12"
  },
  {
   "id": "louise-bussiere",
@@ -1105,7 +1147,7 @@
   ],
   "active": true,
   "club": "Lattes Montpellier",
-  "number": "14"
+  "number": "0"
  },
  {
   "id": "masseny-kaba",
