@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:29:02.134Z",
+ "updated": "2026-11-22T21:59:12.246Z",
  "season": "2026-27",
  "games": [
   {
@@ -29302,9 +29302,8 @@
    },
    "links": {
     "livestats": "https://fibalivestats.dcd.shared.geniussports.com/u/FFBB/2875488/",
-    "lfb": null
+    "lfb": "https://basketlfb.com/laboulangerewonderligue/saison-reguliere/match/876549-villeneuve-d-ascq-charleville-mezieres"
    },
-   "score_source": "FIBA LiveStats",
    "played": true,
    "lines": {
     "marie-michelle-milapie": {
